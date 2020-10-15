@@ -4,9 +4,19 @@ node_js:
 branchs:
   only:
   - master
+install:
+- npm install
+script:
+- npm run build
+env:
+  global:
+    secure: 671
+addons:
+  ssh_known_hosts:
+  - 182.92.131.201 #鍙椾俊涓绘満锛屼綘鐨凩inux鏈嶅姟鍣╥p
 before_install:
 - openssl aes-256-cbc -K $encrypted_04674a2f3de9_key -iv $encrypted_04674a2f3de9_iv
   -in id_rsa.enc -out ~\/.ssh/id_rsa -d
 after_success:
-- chmod 600 ~/.ssh/id_rsa   #还是Linux文件权限问题
-- ssh travis@182.92.131.201 -o StrictHostKeyChecking=no 'cd ~/vbook && git pull && npm install && npm run build'   #使用ssh连接服务器
+- chmod 600 ~/.ssh/id_rsa   #锟斤拷锟斤拷Linux锟侥硷拷权锟斤拷锟斤拷锟斤拷
+- ssh travis@182.92.131.201 -o StrictHostKeyChecking=no 'cd ~/vbook && git pull && npm install && npm run build'   #使锟斤拷ssh锟斤拷锟接凤拷锟斤拷锟斤拷
