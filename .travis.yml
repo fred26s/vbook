@@ -8,9 +8,6 @@ install:
 - npm run install
 script:
 - npm run build
-env:
-  global:
-    secure: 04674a2f3de9
 addons:
   ssh_known_hosts:
   - 182.92.131.201 #受信主机，你的Linux服务器ip
@@ -19,4 +16,4 @@ before_install:
   -in id_rsa.enc -out ~\/.ssh/id_rsa -d
 after_success:
 - chmod 600 ~/.ssh/id_rsa   
-- ssh travis@182.92.131.201 -o StrictHostKeyChecking=no 'cd ~/vbook && git pull && npm run install && npm run build'   #ʹ��ssh���ӷ�����
+- ssh test@182.92.131.201 -o StrictHostKeyChecking=no 'cd ~/vbook && git pull && npm run install && npm run build'   #ʹ��ssh���ӷ�����
