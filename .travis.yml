@@ -5,7 +5,7 @@ branchs:
   only:
   - master
 install:
-- npm install
+- npm run install
 script:
 - npm run build
 env:
@@ -18,5 +18,5 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_04674a2f3de9_key -iv $encrypted_04674a2f3de9_iv
   -in id_rsa.enc -out ~\/.ssh/id_rsa -d
 after_success:
-- chmod 600 ~/.ssh/id_rsa   #����Linux�ļ�Ȩ������
-- ssh travis@182.92.131.201 -o StrictHostKeyChecking=no 'cd ~/vbook && git pull && npm install && npm run build'   #ʹ��ssh���ӷ�����
+- chmod 600 ~/.ssh/id_rsa   
+- ssh travis@182.92.131.201 -o StrictHostKeyChecking=no 'cd ~/vbook && git pull && npm run install && npm run build'   #ʹ��ssh���ӷ�����
