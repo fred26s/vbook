@@ -10,7 +10,7 @@ script:
 - npm run build
 env:
   global:
-    secure: 671
+    secure: 04674a2f3de9
 addons:
   ssh_known_hosts:
   - 182.92.131.201 #受信主机，你的Linux服务器ip
