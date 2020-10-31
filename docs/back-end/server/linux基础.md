@@ -39,7 +39,7 @@ grep xxx 表示在当前结果中搜索包专含xxx字样的字符串
 
 linux 目录实际可以理解为是一个树状结构，
 
-![img](/server/linux1.webp)
+![img](//img.joyfred.com/vuepress/server/linux1.webp)
 
 |                    | 可分享的(shareable)        | 不可分享的(unshareable) |     |
 | ------------------ | -------------------------- | ----------------------- | --- |

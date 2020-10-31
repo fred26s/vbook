@@ -33,4 +33,4 @@ REST -- REpresentational State Transfer 直接翻译：**表现层状态转移**
 
 采用 HTTP 协议规定的 GET、POST、PUT、DELETE 动作处理资源的增删该查操作
 
-![img](/lib-web/RESTful.webp)
+![img](//img.joyfred.com/vuepress/lib-web/RESTful.webp)

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>如何安装 mysql | BLOG</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/vuepress/favicon.ico">
+    <meta name="description" content="学习笔记">
+    <link rel="preload" href="/vuepress/assets/css/0.styles.a1d845f0.css" as="style"><link rel="preload" href="/vuepress/assets/js/app.b5379641.js" as="script"><link rel="preload" href="/vuepress/assets/js/2.2ce5df5b.js" as="script"><link rel="preload" href="/vuepress/assets/js/24.fa2dbf18.js" as="script"><link rel="prefetch" href="/vuepress/assets/js/10.4f04f504.js"><link rel="prefetch" href="/vuepress/assets/js/11.052e66d4.js"><link rel="prefetch" href="/vuepress/assets/js/12.4b91d3f7.js"><link rel="prefetch" href="/vuepress/assets/js/13.f478abd0.js"><link rel="prefetch" href="/vuepress/assets/js/14.3d6ec70e.js"><link rel="prefetch" href="/vuepress/assets/js/15.d68f991e.js"><link rel="prefetch" href="/vuepress/assets/js/16.4aab7c4e.js"><link rel="prefetch" href="/vuepress/assets/js/17.42cb4ee8.js"><link rel="prefetch" href="/vuepress/assets/js/18.d3232e24.js"><link rel="prefetch" href="/vuepress/assets/js/19.2f285c7d.js"><link rel="prefetch" href="/vuepress/assets/js/20.4b2e0497.js"><link rel="prefetch" href="/vuepress/assets/js/21.831564cc.js"><link rel="prefetch" href="/vuepress/assets/js/22.40259483.js"><link rel="prefetch" href="/vuepress/assets/js/23.80b0d71f.js"><link rel="prefetch" href="/vuepress/assets/js/25.67e47efc.js"><link rel="prefetch" href="/vuepress/assets/js/26.859a3e27.js"><link rel="prefetch" href="/vuepress/assets/js/27.a86b3044.js"><link rel="prefetch" href="/vuepress/assets/js/28.85993e32.js"><link rel="prefetch" href="/vuepress/assets/js/29.818cccbf.js"><link rel="prefetch" href="/vuepress/assets/js/3.dfccb20d.js"><link rel="prefetch" href="/vuepress/assets/js/30.2604eb51.js"><link rel="prefetch" href="/vuepress/assets/js/31.5ec69616.js"><link rel="prefetch" href="/vuepress/assets/js/32.423d97c6.js"><link rel="prefetch" href="/vuepress/assets/js/33.ba0953b0.js"><link rel="prefetch" href="/vuepress/assets/js/34.d83292fd.js"><link rel="prefetch" href="/vuepress/assets/js/35.38342573.js"><link rel="prefetch" href="/vuepress/assets/js/36.29cfc688.js"><link rel="prefetch" href="/vuepress/assets/js/37.7b677a64.js"><link rel="prefetch" href="/vuepress/assets/js/38.8c9de88e.js"><link rel="prefetch" href="/vuepress/assets/js/39.fb35c317.js"><link rel="prefetch" href="/vuepress/assets/js/4.d599a372.js"><link rel="prefetch" href="/vuepress/assets/js/40.22f76c92.js"><link rel="prefetch" href="/vuepress/assets/js/41.dffd3fe3.js"><link rel="prefetch" href="/vuepress/assets/js/42.ba46b02a.js"><link rel="prefetch" href="/vuepress/assets/js/43.cbdc1172.js"><link rel="prefetch" href="/vuepress/assets/js/44.21e0416e.js"><link rel="prefetch" href="/vuepress/assets/js/5.6463c672.js"><link rel="prefetch" href="/vuepress/assets/js/6.807d0ed5.js"><link rel="prefetch" href="/vuepress/assets/js/7.875b9abe.js"><link rel="prefetch" href="/vuepress/assets/js/8.ac7f1401.js"><link rel="prefetch" href="/vuepress/assets/js/9.0194e43f.js">
+    <link rel="stylesheet" href="/vuepress/assets/css/0.styles.a1d845f0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vuepress/" class="home-link router-link-active"><!----> <span class="site-name">BLOG</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习笔记" class="dropdown-title"><span class="title">前端学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习笔记" class="mobile-dropdown-title"><span class="title">前端学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/front-end/evo/优化方式.html" class="nav-link">
+  前端优化
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/front-end/js/es6知识.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/front-end/vue/vue知识点.html" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/front-end/webpack/webpack基础.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/front-end/net/网络基础.html" class="nav-link">
+  网络基础
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/front-end/tools/GIT.html" class="nav-link">
+  开发工具
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后台学习笔记" class="dropdown-title"><span class="title">后台学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="后台学习笔记" class="mobile-dropdown-title"><span class="title">后台学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/back-end/node/express.html" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/back-end/lib-web/RESTful.html" class="nav-link">
+  web开发知识
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/back-end/server/Nginx.html" class="nav-link">
+  服务器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JustDoIT" class="dropdown-title"><span class="title">JustDoIT</span> <span class="arrow down"></span></button> <button type="button" aria-label="JustDoIT" class="mobile-dropdown-title"><span class="title">JustDoIT</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/funs/hardware/arduino.html" class="nav-link">
+  硬件
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习笔记" class="dropdown-title"><span class="title">前端学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习笔记" class="mobile-dropdown-title"><span class="title">前端学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/front-end/evo/优化方式.html" class="nav-link">
+  前端优化
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/front-end/js/es6知识.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/front-end/vue/vue知识点.html" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/front-end/webpack/webpack基础.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/front-end/net/网络基础.html" class="nav-link">
+  网络基础
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/front-end/tools/GIT.html" class="nav-link">
+  开发工具
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后台学习笔记" class="dropdown-title"><span class="title">后台学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="后台学习笔记" class="mobile-dropdown-title"><span class="title">后台学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/back-end/node/express.html" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/back-end/lib-web/RESTful.html" class="nav-link">
+  web开发知识
+</a></li><li class="dropdown-item"><!----> <a href="/vuepress/back-end/server/Nginx.html" class="nav-link">
+  服务器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JustDoIT" class="dropdown-title"><span class="title">JustDoIT</span> <span class="arrow down"></span></button> <button type="button" aria-label="JustDoIT" class="mobile-dropdown-title"><span class="title">JustDoIT</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vuepress/funs/hardware/arduino.html" class="nav-link">
+  硬件
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>NodeJS</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/vuepress/back-end/node/express.html" class="sidebar-link">express</a></li><li><a href="/vuepress/back-end/node/服务端鉴权.html" class="sidebar-link">服务端鉴权</a></li><li><a href="/vuepress/back-end/node/node后台-ts实现.html" class="sidebar-link">node后台搭建-TS篇</a></li><li><a href="/vuepress/back-end/node/node后台-工具相关.html" class="active sidebar-link">node后台搭建-工具环境篇</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vuepress/back-end/node/node后台-工具相关.html#如何安装-mysql" class="sidebar-link">如何安装 mysql</a></li><li class="sidebar-sub-header"><a href="/vuepress/back-end/node/node后台-工具相关.html#开机自启动" class="sidebar-link">开机自启动</a></li><li class="sidebar-sub-header"><a href="/vuepress/back-end/node/node后台-工具相关.html#日志服务" class="sidebar-link">日志服务</a></li><li class="sidebar-sub-header"><a href="/vuepress/back-end/node/node后台-工具相关.html#文件上传" class="sidebar-link">文件上传</a></li><li class="sidebar-sub-header"><a href="/vuepress/back-end/node/node后台-工具相关.html#登录鉴权" class="sidebar-link">登录鉴权</a></li><li class="sidebar-sub-header"><a href="/vuepress/back-end/node/node后台-工具相关.html#项目分层" class="sidebar-link">项目分层</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="如何安装-mysql"><a href="#如何安装-mysql" class="header-anchor">#</a> 如何安装 mysql</h2> <ol><li><p>具体步骤不赘述，官网安装速度太慢，推荐使用<a href="http://mirrors.sohu.com/mysql/MySQL-8.0/" target="_blank" rel="noopener noreferrer">国内镜像<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>；</p></li> <li><p>解压完成后，配置全局变量</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>变量名：MYSQL_HOME
+变量值：E:\XX\mysql-5.7.20-winx64
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>Path 路径(win7)</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>在路径最后添加
+;E:\xx\mysql-8.0.19-winx64\bin
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div></li> <li><p>生成 data 文件</p> <p>以管理员身份运行 cmd，进入 E:\mysql\mysql-8.0.12-winx64\bin&gt;下</p> <p>执行命令：</p> <p><code>mysqld --initialize-insecure --user=mysql</code></p> <p>在 E:\python\mysql\mysql-8.0.12-winx64\bin 目录下生成 data 目录</p></li> <li><p>安装 mysql</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>mysqld --install mysql8.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><code>--install</code> 后面的<code>mysql8.0</code>是自定义名</p> <p>如果显示 Service successfully installed，代表安装服务 mysql8.0 已经成功，接下来启动服务：</p></li> <li><p>启动服务</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>net start mysql8.0
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如果显示<code>mysql8.0 服务正在启动 .</code> ~~~ <code>mysql8.0 服务已经启动成功。</code></p> <p>那就明白已经安装全部 okay 啦，就可以登录数据库了！</p></li> <li><p>设置 root 密码</p> <p>先登录进入数据库</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql  -u root
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>如果出现一堆字符，写着<code>welcome</code>什么的那就表示正常登录进数据库啦，只不过目前使用的初始密码</p> <p>然后我们就修改密码，8.0 的修改密码语句为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>alter user 'root'@'localhost' identified by 'new password';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这里修改完后，<code>exit</code>退出 mysql，重新登录时就需要输入密码了（-p 表示输入密码）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>mysql  -u root -p
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ol> <p>这里<code>mysql</code>就全部设置完成了，这里再说一下日常开发我们使用的软件，如<code>navcat</code>；</p> <p>不赘述安装过程，但目前使用<code>mysql8.0</code>版本和<code>navcat12</code>，用<code>navicat</code>连接时，出现了报错如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>Authentication plugin 'caching_sha2_password' cannot be loaded
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>查阅资料了解：出现这个原因是 mysql8 之前的版本中加密规则是 mysql_native_password，而在 mysql8 之后,加密规则是 caching_sha2_password；</p> <p>解决问题方法有两种：</p> <ul><li>一种是升级 navicat 驱动</li> <li>一种是把 mysql 用户登录密码加密规则还原成 mysql_native_password.</li></ul> <p>这里说一下第二种方法：</p> <ol><li><p>登录数据库</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> mysql -u root -p
+
+ // 密码666666
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>修改账户密码加密规则并更新用户密码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>ALTER USER 'root'@'localhost' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER;   #修改加密规则
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';   #更新一下用户的密码
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>刷新权限并重置密码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code> FLUSH PRIVILEGES;   #刷新权限
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>再次重置密码</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>alter user 'root'@'localhost' identified by '666666';
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li></ol> <p>然后就可以解决此问题。</p> <blockquote><p>Shelljs 是 Node.js 下的脚本语言解析器，具有丰富且强大的底层操作(Windows/Linux/OS X)权限。Shelljs 本质就是基于 node 的一层命令封装插件，让前端开发者可以不依赖 linux 也不依赖类似于 cmder 的转换工具，而是直接在我们最熟悉不过的 javascript 代码中编写 shell 命令实现功能。</p> <p>shelljs 做的事就是自动化，从耗时的重复性常规动作里解放出来，提升开发效率和工作心情。</p></blockquote> <h2 id="开机自启动"><a href="#开机自启动" class="header-anchor">#</a> 开机自启动</h2> <h3 id="pm2-使用"><a href="#pm2-使用" class="header-anchor">#</a> PM2 使用</h3> <p>这里介绍<code>PM2</code>进行开机自启动 nodejs 项目；</p> <p>先全局安装<code>pm2</code>:</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm install pm2 -g
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>因为我们的 nodejs 项目使用的是<code>typescript</code>，所以再安装一下<code>ts</code>依赖；</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>pm2 install typescript
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>因为 PM2 项目启动的是 js 文件，所以我们先把<code>ts</code>构建一下<code>npm run build</code>;</p> <p>然后启动 pm2;</p> <p>okay，cd 到 serve 项目根目录，启动！</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>pm2 start serve.js --name='xxx'
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>不确定是否启动成功，可以监听一下活动端口，是否有当前端口：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>netstat
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>这里就开启了一个永久后台启动的 nodejs 项目了。</p> <h3 id="开机自启动-2"><a href="#开机自启动-2" class="header-anchor">#</a> 开机自启动</h3> <p>这里如果想在 windows 下，开机自启动 node 项目；</p> <p>可以安装<code>pm2-windows-service</code>模块来支持；</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm i -g pm2-windows-service
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="添加-pm2-环境变量"><a href="#添加-pm2-环境变量" class="header-anchor">#</a> 添加 pm2 环境变量</h3> <p>添加系统环境变量 <code>PM2_HOME=D:\.pm2</code>
+右键 [我的电脑] - [属性] - [高级系统设置] - [环境变量] - 新建 [系统变量]
+名称<code>PM2_HOME</code>
+路径<code>D:\.pm2</code>（这路径根据自己需要定）</p> <h3 id="安装服务"><a href="#安装服务" class="header-anchor">#</a> 安装服务</h3> <p>以管理员权限打开新的命令行窗口,执行以下命令来安装服务</p> <div class="language-undefined line-numbers-mode"><pre class="language-text"><code>pm2-service-install
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><code>Perform environment setup ?</code> 选 n, 继续
+此时, PM2 服务已安装成功并已启动, 可以通过 Wn+R 来查看，输入<code>services.msc</code>即可看到服务</p> <h3 id="启动-node-程序"><a href="#启动-node-程序" class="header-anchor">#</a> 启动 node 程序</h3> <p>下面用 pm2 来启动我们自己的服务程序 app.js, 然后告诉 pm2 开机后自动运行我 app.js
+继续在管理员命令行下, cd 到 app.js 所在目录</p> <div class="language-css line-numbers-mode"><pre class="language-css"><code>pm2 start app.js --name myapp
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>查看服务列表</p> <div class="language-cpp line-numbers-mode"><pre class="language-cpp"><code>pm2 list
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>添加到自启动服务</p> <div class="language-undefined line-numbers-mode"><pre class="language-text"><code>pm2 save
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p><code>pm2 save</code>很重要, 它保存当前 pm2 正在管理的 NodeJS 服务, 并在开机后恢复这些服务
+至此, 安装配置完成</p> <h3 id="卸载服务"><a href="#卸载服务" class="header-anchor">#</a> 卸载服务</h3> <div class="language-undefined line-numbers-mode"><pre class="language-text"><code>pm2-service-uninstall
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="pm2-常用命令"><a href="#pm2-常用命令" class="header-anchor">#</a> pm2 常用命令</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ pm2 start app.js # 启动app.js应用程序
+$ pm2 start app.js -i 4 # cluster mode 模式启动4个app.js的应用实例
+# 4个应用程序会自动进行负载均衡
+$ pm2 start app.js --name=&quot;api&quot; # 启动应用程序并命名为 &quot;api&quot;
+$ pm2 start app.js --watch # 当文件变化时自动重启应用
+$ pm2 start script.sh # 启动 bash 脚本
+
+$ pm2 list # 列表 PM2 启动的所有的应用程序
+$ pm2 monit # 显示每个应用程序的CPU和内存占用情况
+$ pm2 show [app-name] # 显示应用程序的所有信息
+
+$ pm2 logs # 显示所有应用程序的日志
+$ pm2 logs [app-name] # 显示指定应用程序的日志
+pm2 flush
+
+$ pm2 stop all # 停止所有的应用程序
+$ pm2 stop 0 # 停止 id为 0的指定应用程序
+$ pm2 restart all # 重启所有应用
+$ pm2 reload all # 重启 cluster mode下的所有应用
+$ pm2 gracefulReload all # Graceful reload all apps in cluster mode
+$ pm2 delete all # 关闭并删除所有应用
+$ pm2 delete 0 # 删除指定应用 id 0
+$ pm2 scale api 10 # 把名字叫api的应用扩展到10个实例
+$ pm2 reset [app-name] # 重置重启数量
+
+$ pm2 startup # 创建开机自启动命令
+$ pm2 save # 保存当前应用列表
+$ pm2 resurrect # 重新加载保存的应用列表
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><h2 id="日志服务"><a href="#日志服务" class="header-anchor">#</a> 日志服务</h2> <h3 id="种类"><a href="#种类" class="header-anchor">#</a> 种类</h3> <p>日志服务分为代码中为两种：</p> <ul><li><h3 id="定位问题产出的日志"><a href="#定位问题产出的日志" class="header-anchor">#</a> 定位问题产出的日志</h3></li> <li><h3 id="请求记录日志"><a href="#请求记录日志" class="header-anchor">#</a> 请求记录日志</h3></li></ul> <p>定位问题产出的日志我们可以通过在代码中引入库来完成，好用的有<code>morgan</code>、<code>winston</code>等等；</p> <p>这里只列出使用介绍，不详细讲解配置信息；</p> <p>使用<code>morgan</code>库实现日志服务；</p> <blockquote><p>使用方法可参照官方项目示例：<a href="https://www.npmjs.com/package/morgan" target="_blank" rel="noopener noreferrer">https://www.npmjs.com/package/morgan<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>详细进阶方法可访问：<a href="https://github.com/chyingp/nodejs-learning-guide/blob/master/%E8%BF%9B%E9%98%B6/%E6%97%A5%E5%BF%97%E6%A8%A1%E5%9D%97morgan.md" target="_blank" rel="noopener noreferrer">https://github.com/chyingp/nodejs-learning-guide/blob/master/%E8%BF%9B%E9%98%B6/%E6%97%A5%E5%BF%97%E6%A8%A1%E5%9D%97morgan.md<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <div class="language- line-numbers-mode"><pre class="language-text"><code>自定义日志格式
+首先搞清楚morgan中的两个概念：format 跟 token。非常简单：
+
+format：日志格式，本质是代表日志格式的字符串，比如 :method :url :status :res[content-length] - :response-time ms。
+token：format的组成部分，比如上面的:method、:url即使所谓的token。
+搞清楚format、token的区别后，就可以看下morgan中，关于自定义日志格式的关键API。
+
+morgan.format(name, format);  // 自定义日志格式
+morgan.token(name, fn);  // 自定义token
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>示例：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var express = require('express');
+var app = express();
+var morgan = require('morgan');
+
+// 自定义token
+morgan.token('from', function(req, res){
+    return req.query.from || '-';
+});
+
+// 自定义format，其中包含自定义的token
+morgan.format('joke', '[joke] :method :url :status :from');
+
+// 使用自定义的format
+app.use(morgan('joke'));
+
+app.use(function(req, res, next){
+    res.send('ok');
+});
+
+app.listen(3000);
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="pm2-产出监控日志"><a href="#pm2-产出监控日志" class="header-anchor">#</a> pm2 产出监控日志</h3> <p>如我们一个持久化的服务，在运行时如果需要错误日志，我们可以通过<code>pm2.json</code>配置文件完成；</p> <p>pm2.json 可以配置多个运行的进程参数；</p> <p>详细配置可以参照： https://www.cnblogs.com/bq-med/p/9012438.html</p> <h2 id="文件上传"><a href="#文件上传" class="header-anchor">#</a> 文件上传</h2> <p>可以使用插件库解决，<code>Multiparty</code>和<code>Formidable</code>；</p> <p>Multiparty 可以用来解析 FormData 数据，Formidable 也是与之功能相同的插件；</p> <h2 id="登录鉴权"><a href="#登录鉴权" class="header-anchor">#</a> 登录鉴权</h2> <p>可以使用<code>express-jwt</code>插件库；</p> <p>Node.js 上 Token 鉴权常用的是 passport，它可以自定义校验策略，但如果你是用 express 框架，又只是解析 JWT 这种简单需求，可以尝试下 express-jwt 这个中间件。</p> <h2 id="项目分层"><a href="#项目分层" class="header-anchor">#</a> 项目分层</h2> <p>3 层架构，controller service DAO</p> <p>sql 写在 DAO 层中；</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/vuepress/back-end/node/node后台-ts实现.html" class="prev">
+        node后台搭建-TS篇
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/vuepress/assets/js/app.b5379641.js" defer></script><script src="/vuepress/assets/js/2.2ce5df5b.js" defer></script><script src="/vuepress/assets/js/24.fa2dbf18.js" defer></script>
+  </body>
+</html>

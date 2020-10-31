@@ -59,7 +59,7 @@
 
   整个代码库通用的代码
 
-![vue解析流程](/vue/vue解析流程.png)
+![vue解析流程](//img.joyfred.com/vuepress/vue/vue解析流程.png)
 
 ## 入口文件
 
@@ -336,7 +336,7 @@ function defineReactive (obj, key, val) {
 
   观察者，实例分为渲染 watcher、计算属性 watcher、侦听器 watcher 三种
 
-![observe](/vue/observe.webp)
+![observe](//img.joyfred.com/vuepress/vue/observe.webp)
 
 ### 响应式小结：
 

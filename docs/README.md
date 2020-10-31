@@ -1,8 +1,8 @@
 ---
 home: true
-heroImage: /domain.jpg
+heroImage: https://img.joyfred.com/vuepress/avatar.webp
 actionText: 日积跬步 →
-actionLink: /Blog/js/js闭包
+actionLink: /front-end/js/es6知识.html
 features:
   - title: 比尔·盖茨经典语录/名句
     details: 只要有坚强的持久心，一个庸俗平凡的人也会有成功的一天，否则即使是一个才识卓越的人，也只能遭遇失败的命运。

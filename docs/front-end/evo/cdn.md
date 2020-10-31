@@ -4,7 +4,7 @@
 
 ## CDN 做了什么
 
-![img](https://img-blog.csdnimg.cn/2019082315581218.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0REX29yeg==,size_16,color_FFFFFF,t_70)
+![img](//img.joyfred.com/vuepress/evo/cdn1.png)
 
 从这张图出发，很形象的描述了一下 CDN 到底做了什么；
 
