@@ -6,6 +6,7 @@ module.exports = {
   "/front-end/webpack/": require("../front-end/webpack/sidebar"),
   "/front-end/net/": require("../front-end/net/sidebar"),
   "/front-end/tools/": require("../front-end/tools/sidebar"),
+  "/front-end/ci/": require("../front-end/ci/sidebar"),
   // 后端
   "/back-end/node/": require("../back-end/node/sidebar"),
   "/back-end/lib-web/": require("../back-end/lib-web/sidebar"),
