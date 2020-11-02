@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一、首先要了解js中作用域链 | BLOG</title>
+    <meta name="generator" content="VuePress 1.5.4">
+    <link rel="icon" href="/vbook/favicon.ico">
+    <meta name="description" content="学习笔记">
+    <link rel="preload" href="/vbook/assets/css/0.styles.e0606203.css" as="style"><link rel="preload" href="/vbook/assets/js/app.56a9a2ed.js" as="script"><link rel="preload" href="/vbook/assets/js/2.2ce5df5b.js" as="script"><link rel="preload" href="/vbook/assets/js/14.d41b2257.js" as="script"><link rel="prefetch" href="/vbook/assets/js/10.09b2ea05.js"><link rel="prefetch" href="/vbook/assets/js/11.b33443e5.js"><link rel="prefetch" href="/vbook/assets/js/12.31280131.js"><link rel="prefetch" href="/vbook/assets/js/13.1ae03640.js"><link rel="prefetch" href="/vbook/assets/js/15.b571d130.js"><link rel="prefetch" href="/vbook/assets/js/16.8a84fe06.js"><link rel="prefetch" href="/vbook/assets/js/17.be4efc3d.js"><link rel="prefetch" href="/vbook/assets/js/18.d449664b.js"><link rel="prefetch" href="/vbook/assets/js/19.8f8c2dff.js"><link rel="prefetch" href="/vbook/assets/js/20.5d3267da.js"><link rel="prefetch" href="/vbook/assets/js/21.a6523cdd.js"><link rel="prefetch" href="/vbook/assets/js/22.c640d9af.js"><link rel="prefetch" href="/vbook/assets/js/23.879bf70a.js"><link rel="prefetch" href="/vbook/assets/js/24.bd48ace9.js"><link rel="prefetch" href="/vbook/assets/js/25.0f12410b.js"><link rel="prefetch" href="/vbook/assets/js/26.718ccfa4.js"><link rel="prefetch" href="/vbook/assets/js/27.f153037d.js"><link rel="prefetch" href="/vbook/assets/js/28.508d01f9.js"><link rel="prefetch" href="/vbook/assets/js/29.dbe0222b.js"><link rel="prefetch" href="/vbook/assets/js/3.dfccb20d.js"><link rel="prefetch" href="/vbook/assets/js/30.9988d278.js"><link rel="prefetch" href="/vbook/assets/js/31.6008081f.js"><link rel="prefetch" href="/vbook/assets/js/32.6d16c0dd.js"><link rel="prefetch" href="/vbook/assets/js/33.e4e21daf.js"><link rel="prefetch" href="/vbook/assets/js/34.d37fab85.js"><link rel="prefetch" href="/vbook/assets/js/35.6f741ed5.js"><link rel="prefetch" href="/vbook/assets/js/36.58d8b589.js"><link rel="prefetch" href="/vbook/assets/js/37.674e27ab.js"><link rel="prefetch" href="/vbook/assets/js/38.fa018258.js"><link rel="prefetch" href="/vbook/assets/js/39.2f197b8d.js"><link rel="prefetch" href="/vbook/assets/js/4.d599a372.js"><link rel="prefetch" href="/vbook/assets/js/40.60890a66.js"><link rel="prefetch" href="/vbook/assets/js/41.99ac89f4.js"><link rel="prefetch" href="/vbook/assets/js/42.fc4ec52c.js"><link rel="prefetch" href="/vbook/assets/js/43.f3404978.js"><link rel="prefetch" href="/vbook/assets/js/44.98c5c2de.js"><link rel="prefetch" href="/vbook/assets/js/45.4f1b0703.js"><link rel="prefetch" href="/vbook/assets/js/46.ed7569c8.js"><link rel="prefetch" href="/vbook/assets/js/5.4413bd57.js"><link rel="prefetch" href="/vbook/assets/js/6.0afd5f60.js"><link rel="prefetch" href="/vbook/assets/js/7.61ee7893.js"><link rel="prefetch" href="/vbook/assets/js/8.aa2210e7.js"><link rel="prefetch" href="/vbook/assets/js/9.2be3499c.js">
+    <link rel="stylesheet" href="/vbook/assets/css/0.styles.e0606203.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/vbook/" class="home-link router-link-active"><!----> <span class="site-name">BLOG</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习笔记" class="dropdown-title"><span class="title">前端学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习笔记" class="mobile-dropdown-title"><span class="title">前端学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vbook/front-end/evo/优化方式.html" class="nav-link">
+  前端优化
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/front-end/js/es6知识.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/front-end/vue/vue知识点.html" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/front-end/webpack/webpack基础.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/front-end/net/网络基础.html" class="nav-link">
+  网络基础
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/front-end/tools/GIT.html" class="nav-link">
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/front-end/ci/travis自动部署.html" class="nav-link">
+  前端自动化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后台学习笔记" class="dropdown-title"><span class="title">后台学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="后台学习笔记" class="mobile-dropdown-title"><span class="title">后台学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vbook/back-end/node/express.html" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/back-end/lib-web/RESTful.html" class="nav-link">
+  web开发知识
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/back-end/server/Nginx.html" class="nav-link">
+  服务器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JustDoIT" class="dropdown-title"><span class="title">JustDoIT</span> <span class="arrow down"></span></button> <button type="button" aria-label="JustDoIT" class="mobile-dropdown-title"><span class="title">JustDoIT</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vbook/funs/hardware/arduino.html" class="nav-link">
+  硬件
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端学习笔记" class="dropdown-title"><span class="title">前端学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端学习笔记" class="mobile-dropdown-title"><span class="title">前端学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vbook/front-end/evo/优化方式.html" class="nav-link">
+  前端优化
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/front-end/js/es6知识.html" class="nav-link">
+  JS
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/front-end/vue/vue知识点.html" class="nav-link">
+  VUE
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/front-end/webpack/webpack基础.html" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/front-end/net/网络基础.html" class="nav-link">
+  网络基础
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/front-end/tools/GIT.html" class="nav-link">
+  开发工具
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/front-end/ci/travis自动部署.html" class="nav-link">
+  前端自动化
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后台学习笔记" class="dropdown-title"><span class="title">后台学习笔记</span> <span class="arrow down"></span></button> <button type="button" aria-label="后台学习笔记" class="mobile-dropdown-title"><span class="title">后台学习笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vbook/back-end/node/express.html" class="nav-link">
+  NodeJS
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/back-end/lib-web/RESTful.html" class="nav-link">
+  web开发知识
+</a></li><li class="dropdown-item"><!----> <a href="/vbook/back-end/server/Nginx.html" class="nav-link">
+  服务器
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JustDoIT" class="dropdown-title"><span class="title">JustDoIT</span> <span class="arrow down"></span></button> <button type="button" aria-label="JustDoIT" class="mobile-dropdown-title"><span class="title">JustDoIT</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/vbook/funs/hardware/arduino.html" class="nav-link">
+  硬件
+</a></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="一、首先要了解js中作用域链"><a href="#一、首先要了解js中作用域链" class="header-anchor">#</a> 一、首先要了解js中作用域链</h1> <h3 id="_1-执行环境"><a href="#_1-执行环境" class="header-anchor">#</a> 1.执行环境</h3> <p>1.执行环境的定义（也称为执行上下文）：简单来说就是当前js代码在解析和执行时所在的环境。在一个执行环境中，有一个与之关联的变量对象（简称对象），在该对象中，存储着这个执行环境中定义的变量和函数；但这个对象是抽象的，并不能被外界所访问到。
+2.那么在js中，就只有两种执行环境：</p> <ul><li>一个是window的全局执行环境：这个是默认的代码执行环境，一旦代码被载入，引擎最先进入的就是这个环境。例如，我们在全局运行下列代码，那么当前的执行环境就是<font color="red"> window </font>，也就是全局，在该环境中关联的对象中存储着定义的变量，也就是<font color="red"> color </font>。</li></ul> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code>	<span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+        <span class="token keyword">var</span> color <span class="token operator">=</span> <span class="token string">'red'</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>在JavaScript中，函数也会形成一个环境。看下面代码,在函数的内部就是一个局部的环境，与该环境关联的对象中存储着变量<font color="red"> mycolor</font>,而在全局环境中<font color="red"> color</font>和<font color="red"> app函数</font>就是该环境关联对象中存储的<font color="red"> 变量</font>和<font color="red"> 函数</font>。</li></ul> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+	<span class="token comment">//全局环境下</span>
+		<span class="token keyword">var</span> color <span class="token operator">=</span> <span class="token string">'red'</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">function</span> <span class="token function">app</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//函数环境内</span>
+            <span class="token keyword">var</span> mycolor <span class="token operator">=</span> <span class="token string">'green'</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mycolor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">app</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h3 id="_2-作用域链"><a href="#_2-作用域链" class="header-anchor">#</a> 2.作用域链</h3> <p>1.在了解了上面的执行环境后，换个角度思考：那么函数环境内能不能访问全局环境下的变量呢？
+看下列代码：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+        <span class="token comment">//全局环境</span>
+        <span class="token keyword">var</span> color <span class="token operator">=</span> <span class="token string">'red'</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">function</span> <span class="token function">app</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//局部环境</span>
+            <span class="token keyword">var</span> mycolor <span class="token operator">=</span> <span class="token string">'green'</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mycolor <span class="token operator">+</span> <span class="token string">'---'</span> <span class="token operator">+</span> color<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">app</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>color <span class="token operator">+</span> <span class="token string">'---'</span> <span class="token operator">+</span> mycolor<span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>打印结果：
+<img src="https://img-blog.csdnimg.cn/20200716204805352.png" alt="在这里插入图片描述">
+可以看到结果是可以的，但是在全局环境下访问函数环境内的变量却报错。
+<font color="red"> 作用域链的概念：</font>当代码在一个环境中执行的时候，会针对环境中存储变量和函数的对象创建一个作用域链，作用域链的最前端就是当前环境的对象；如果当前环境是个函数，则作用域链的下一部分就是全局<font color="red"> window</font>环境的变量对象。<font color="red"> 而window环境的变量对象始终都是作用域链中最后一个对象。</font></p> <p>分析一下代码：
+首先<font color="red"> app（）执行</font>，app函数内的执行环境会<font color="red"> 先访问内部的变量</font>，然后找到了mycolor变量，但是没找到color变量，因为app是个函数，所以它的作用域链还会延申到全局window下，所以由于作用域链在全局下寻找color变量；
+再看window环境下的代码：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>color <span class="token operator">+</span> <span class="token string">'---'</span> <span class="token operator">+</span> mycolor<span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>首先会在window环境中寻找到color变量，然后开始寻找mycolor但是没有找到，所以会沿着作用域链往下寻找；因为在window环境下，所以此时作用域链已经到达了尾部，不会再向下寻找了，所有就不能访问到<font color="red"> color变量</font>。
+现在应该可以大概了解作用域链概念了，在看下面代码：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+        <span class="token comment">//全局环境</span>
+        <span class="token keyword">var</span> color <span class="token operator">=</span> <span class="token string">'red'</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">function</span> <span class="token function">app</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">//函数内的局部环境</span>
+            <span class="token keyword">var</span> mycolor <span class="token operator">=</span> <span class="token string">'green'</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mycolor <span class="token operator">+</span> <span class="token string">'---'</span> <span class="token operator">+</span> color <span class="token punctuation">)</span><span class="token comment">//这里可以访问外部window环境下的变量</span>
+            <span class="token keyword">function</span> <span class="token function">inapp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            	<span class="token comment">//函数内的局部环境</span>
+                <span class="token keyword">var</span> incolor <span class="token operator">=</span> <span class="token string">'blue'</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>incolor <span class="token operator">+</span> <span class="token string">'---'</span> <span class="token operator">+</span> mycolor <span class="token operator">+</span><span class="token string">'---'</span><span class="token operator">+</span> color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token comment">//在这里可以访问到incolor 、mycolor 、color变量</span>
+            <span class="token punctuation">}</span>
+            <span class="token function">inapp</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  			console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>mycolor <span class="token operator">+</span> <span class="token string">'---'</span><span class="token operator">+</span> incolor<span class="token punctuation">)</span><span class="token comment">//但是却不能访问到inapp（）函数内的变量</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">app</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        
+    <span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>运行结果：
+<img src="https://img-blog.csdnimg.cn/20200717100353966.png" alt="在这里插入图片描述">
+这就是作用域链的作用：保证了<font color="red"> 执行环境中代码对变量的有序访问</font>。
+你可以这样理解结论：当访问一个函数的变量或者方法时，它首先会在自己所在的内部环境中查找，如果没找到就会通过作用域链向外部环境查找，直到找到变量为止，如果到了全局window环境下都没有找到，就会抛出错误；但是外部环境不能访问内部环境中的任何变量和函数。</p> <h3 id="_3-块级作用域"><a href="#_3-块级作用域" class="header-anchor">#</a> 3.块级作用域</h3> <p>1.在JavaScript中是没有块级作用域的，由花括号或小括号封闭起来的区域内没有自己的作用域，看下面两个例子：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">var</span> color <span class="token operator">=</span> <span class="token string">'red'</span>
+        <span class="token punctuation">}</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>color<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//red</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>可以看到外部能访问color变量，按照作用域链的规则来说应该是不能访问的，在看一个例子：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">for</span><span class="token punctuation">(</span> <span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span><span class="token number">5</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+        <span class="token punctuation">}</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 5</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>可以看到在for语句中定义的i变量，在其外部也可以被访问到，以上两个例子都是没有块级作用域而造成的结果。解决以上问题可以用let和const变量来解决。</p> <h3 id="_4-特殊情况"><a href="#_4-特殊情况" class="header-anchor">#</a> 4.特殊情况</h3> <p>这种情况会影响访问变量的顺序，那就是不声明直接给一个变量赋值，看下列代码：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">app</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            sum <span class="token operator">=</span> <span class="token number">10</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">app</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sum<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 10</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>按照我们之前的理解，因为作用域链，sum变量应该是访问不到的；但在看却返回10，这是因为我们再用<font color="red"> var </font>声明变量的时候，会自动将该变量放到离其作用域最近的环境中，比如你在函数fn中var a = 1，那么a变量就放到fn的环境中；同理在window下定义的变量，就放在window全局环境中。但是如果该变量没有定义，直接赋值，那么该变量就会直接被放到全局环境下，这就是为什么可以访问到sum的原因。</p> <h1 id="二、闭包"><a href="#二、闭包" class="header-anchor">#</a> 二、闭包</h1> <h3 id="_1-闭包的定义"><a href="#_1-闭包的定义" class="header-anchor">#</a> 1.闭包的定义</h3> <ol><li><strong>闭包</strong>： 是指有权访问另一个函数作用中的变量的函数，常见的闭包形式就是一个函数的内部再创建另一个函数。</li> <li>当你理解了作用域链的概念那么闭包就很好理解了，看下面的例子：</li></ol> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token number">10</span>
+    <span class="token keyword">function</span> <span class="token function">outf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">let</span> outnum <span class="token operator">=</span> <span class="token number">20</span>
+        <span class="token keyword">function</span> <span class="token function">inf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">let</span> sum <span class="token operator">=</span> outnum <span class="token operator">+</span> num
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>sum<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">inf</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    <span class="token function">outf</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">// 打印 30</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>在inf函数中通过作用域链访问外部outf（）和全局window环境下的变量。
+这就是我们所说的：<strong>一个函数有权访问另一个函数内部的变量</strong>。</p> <h1 id="三、使用闭包需要注意的问题"><a href="#三、使用闭包需要注意的问题" class="header-anchor">#</a> 三、使用闭包需要注意的问题</h1> <p>1.点击小li标签，打印出对应的index，看下列代码：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span><span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> i
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> arr
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+result<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>         <span class="token comment">//返回10</span>
+result<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>         <span class="token comment">//返回10   </span>
+   ……
+result<span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>         <span class="token comment">//返回10</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><p>这个例子就是在函数 create 中通过 for 循环定义10个匿名函数，每个函数都返回变量 i，最终将每个匿名函数保存到数组 arr 中并返回数组 arr，然后我们在收到数组 arr 后依次调用每个匿名函数，发现每个返回的都是数字10，而我们最初的目的是依次返回的是 0~9。</p> <p>这是因为，我们调用匿名函数的时候需要返回变量 i ，而匿名函数内部没有该变量，所以去往下一个变量对象，也就是定义匿名函数时所处的函数环境 create 中寻找变量 i ，但此时的变量 i 已经通过循环变成了10，所以当我们调用每个匿名函数时，返回的全部都是10.</p> <p>为此，我们的代码可以写成这样：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">var</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span> i<span class="token operator">&lt;</span><span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        arr<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> num
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> arr
+<span class="token punctuation">}</span>
+
+<span class="token keyword">let</span> result <span class="token operator">=</span> <span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+result<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>         <span class="token comment">//返回 0</span>
+result<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>         <span class="token comment">//返回 1   </span>
+   ……
+result<span class="token punctuation">[</span><span class="token number">9</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>         <span class="token comment">//返回 9</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br></div></div><p>这样做就直接在定义最内部的匿名函数时，把当前循环的变量 i 放在了最内部匿名函数外部的那个匿名函数内，这样的话，我们之后调用匿名函数时，寻找变量 i 就会从该匿名函数外部的那个匿名函数的变量对象中找到相应的变量。</p> <h1 id="四、内存泄漏"><a href="#四、内存泄漏" class="header-anchor">#</a> 四、内存泄漏</h1> <h3 id="_1-首先了解一下js的垃圾回收机制"><a href="#_1-首先了解一下js的垃圾回收机制" class="header-anchor">#</a> 1.首先了解一下js的垃圾回收机制</h3> <p>1.在JavaScript中，具有自动垃圾回收机制，也就是说执行环境会管理自己内部内存，比如局部环境中的局部变量，变量在被声明后，这个局部变量会在局部环境中的内存中分配空间来存储；然后在函数中使用这些变量，直至函数执行结束。此时，局部变量就没有存在的必要了，就会被自动销毁，以释放内存。看下面代码：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> color <span class="token operator">=</span> <span class="token string">'red'</span>
+
+<span class="token keyword">function</span> <span class="token function">change</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">let</span> my_color <span class="token operator">=</span> <span class="token string">'blue'</span>
+	color <span class="token operator">=</span> <span class="token string">'green'</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">change</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>当函数执行结束后，里面的变量<font color="red"> my_color </font>就会被回收；在JavaScript中一共有两种方法来实现垃圾回收：<font color="red"> 标记清除</font>、<font color="red"> 引用计数</font>。</p> <h5 id="标记清除"><a href="#标记清除" class="header-anchor">#</a> 标记清除</h5> <p>1.这是js最常用的清除方式。当一个变量进入环境（比如在函数中声明了一个变量），就会将这个变量标记为<font color="red"> 进入环境</font>，那么当变量<font color="red"> 离开环境</font>时，就会将其标记为“离开环境”，等到垃圾回收执行时，会根据标记来清除相关变量。</p> <h5 id="引用计数"><a href="#引用计数" class="header-anchor">#</a> 引用计数</h5> <p>2.这种方式不是很常用，就是针对值为引用类型数据的变量进行计数，来看简单的例子：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+  <span class="token keyword">function</span> <span class="token function">change</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> my_num <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span>
+            num <span class="token operator">=</span> my_num 
+ <span class="token punctuation">}</span>
+ <span class="token function">change</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// num = [4,5,6]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>当my_color被声明，并将一个<font color="red">引用类型值</font>赋值给它，同时又将my_num赋值给了全局num，那么此时my_num的值被全局变量num所引用了，所以my_num的引用次数+1，就不会被垃圾回收机制所回收，若取消了原本的引用，次数就-1，那么当一个变量的引用次数为0时候，那么就会被垃圾回收机制回收，不为 0 就不做处理。
+那么我们如何处理掉那些被引用的变量呢，不让他占用内存；
+很简单，在使用该变量后，<font color="red">将其赋值为null</font>，看下列代码：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> num <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+  <span class="token keyword">function</span> <span class="token function">change</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">let</span> my_num <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span>
+            num <span class="token operator">=</span> my_num 
+ <span class="token punctuation">}</span>
+ <span class="token function">change</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+ console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>num<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// num = [4,5,6]</span>
+ num <span class="token operator">=</span> <span class="token keyword">null</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h3 id="_2-内存泄漏概念"><a href="#_2-内存泄漏概念" class="header-anchor">#</a> 2.内存泄漏概念</h3> <ol><li>只有在IE9之前才会因为闭包出现内存泄露的问题。</li> <li>你可以简单的理解为： 当一个闭包的作用域链内有一个html元素时候，那么这个html元素是无法被js垃圾回收机制回收。
+看下列代码：</li></ol> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">let</span> element <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span>
+    
+    element<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span class="token punctuation">.</span>id<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><p>在函数 handle 中，给HTML元素 element 创建了一个点击事件的匿名函数，该函数内部引用了变量 element ，所以变量 element 的引用次数为1，这样的话垃圾回收机制一直都不会清除该元素了，这就是一个内存泄露的情况。
+那么如何解决？so easy</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">function</span> <span class="token function">handle</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    
+    <span class="token keyword">let</span> element <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span>
+    <span class="token keyword">let</span> id <span class="token operator">=</span> element<span class="token punctuation">.</span>id
+    
+    element<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+    
+    element <span class="token operator">=</span> <span class="token keyword">null</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>将元素 element 的 id 值保存在一个变量 id 内，然后在该元素的点击处理事件中引用变量 id ， 并且在最后通过把变量 element设置为 null ，以解除对DOM元素的引用，这样引用次数就变为0，而不再是1了，垃圾回收机制就可以对其进行清除了。</p> <h1 id="五、闭包中私有变量"><a href="#五、闭包中私有变量" class="header-anchor">#</a> 五、闭包中私有变量</h1> <p>了解作用域链的关系，就知道了只有内部环境访问外部环境的规则，而外部环境不能访问内部环境，所以在内部环境的定义的变量就成为自己的私有变量，闭包也是JavaScript实现私有变量的方法。
+看代码来了解一下把：</p> <div class="language-javascript line-numbers-mode"><pre class="language-javascript"><code><span class="token keyword">let</span> a <span class="token operator">=</span> <span class="token number">1</span>
+<span class="token keyword">let</span> c <span class="token operator">=</span> <span class="token number">4</span>
+
+     <span class="token keyword">function</span> <span class="token function">fn1</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword">let</span> b <span class="token operator">=</span> <span class="token number">2</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">//打印 4 而不打印 3，就是因为作用域链的关系没有访问fn2的权限</span>
+          <span class="token keyword">function</span> <span class="token function">fn2</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+              <span class="token keyword">let</span> c <span class="token operator">=</span> <span class="token number">3</span>
+              console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//打印 2 ，那么此时c变量就成为了fn2 的私有变量</span>
+          <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h1 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h1> <p>现在你应该对js闭包有了一个全面的认识了吧.</p> <ul><li>闭包是指有权访问另一个函数作用中的变量的函数，常见的闭包形式就是一个函数的内部再创建另一个函数。</li> <li>闭包作用就是形成私有变量，是外部无法访问到。</li></ul> <p>参考文档：https://blog.csdn.net/l_ppp/article/details/107130054 写的很好。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/vbook/assets/js/app.56a9a2ed.js" defer></script><script src="/vbook/assets/js/2.2ce5df5b.js" defer></script><script src="/vbook/assets/js/14.d41b2257.js" defer></script>
+  </body>
+</html>
