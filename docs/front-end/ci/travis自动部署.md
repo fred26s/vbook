@@ -407,3 +407,62 @@ after_success:
 
 after_success是在Travis执行完 **install** 和 **script** 之后执行的钩子,其他的Travis配置可以参考官方文档。我这里构建成功之后就简单的build一下，看能不能build成功，build成功才登陆服务器，在服务器上build（当然也可以直接把Travis的build结果通过scp拷贝到服务器指定目录）...
 
+## 7.遇到的问题
+
+现在其实已经完成了基础的自动化部署了。目前travis可以在我推送自己的blog仓库后，自动连接到我的服务器，并更新blog仓库。
+
+因为我已经用nginx部署了仓库dist文件的位置，所以基本可以完成推送blog代码，我的线上网页实时更新内容。
+
+但现实是，在我配置使用第一次的过程中就发现了几个很蠢很现实的问题：
+
+1. blog用的是vuepress，我需要在本地build出dist文件后，再将整个dist文件一同推上仓库。。
+
+   不符合ci的宗旨，我写完文章后既要执行build，又要推送代码；
+
+2. dist文件实在太大！因为我blog中包含的图片，一并打包在了dist中；
+
+所以。。依次来解决吧
+
+第二个问题，就要处理blog中的图片问题，这个详情见我的另一篇文章；
+
+第一个问题，现在下一节进行介绍。
+
+## 8.优化CI流程
+
+解决第一个问题，不应该在本地build再将dist文件夹传来传去的，而是直接在远端构建。
+
+因为目前我用的是阿里云1G的弱鸡服务器，构建vuepress时会报出内存溢出的问题，所以这里曲线救国:
+
+1. 在travis服务器构建，
+2. 再通过scp传输到自己的服务器。
+
+```
+// .travis.yml
+
+language: node_js
+node_js:
+- '8'
+branchs:
+  only:
+  - master
+addons:
+  ssh_known_hosts:
+  - 182.92.131.201
+install: # 在安装项目环境阶段需要运行的命令，一条一行，类似的还有 before_install
+  - source travis_init.sh # 执行指定的 shell 脚本来做初始化
+script: # 在构建阶段需要运行的命令，一条一行，类似的还有 before_script、after_script
+  - npm run build # 生成dist
+before_install:
+- openssl aes-256-cbc -K $encrypted_04674a2fxxx_key -iv $encrypted_04674a2fxxx_iv #解密ssh私钥
+  -in id_rsa.enc -out ~/.ssh/id_rsa -d
+after_success:
+- chmod 600 ~/.ssh/id_rsa
+- ssh travis@182.92.131.xxx -o StrictHostKeyChecking=no 'cd ~ && ./hello.sh' #通过ssh连接自己的远端服务器
+- scp -o stricthostkeychecking=no -i ~/.ssh/id_rsa -r ./dist travis@182.92.131.xxx:/home/travis/vbook #通过scp将打包后的dist文件传输到自己的服务器上
+
+```
+
+记得！yml中不能添加注释，否则travis会无法识别自动构建！
+
+这里发现。。travis服务器上构建也会报内存溢出，看来……这个问题还是绕不开，不过思路是没问题的，目前暂时还是使用之前本地构建的方法吧
+

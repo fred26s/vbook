@@ -1,5 +1,5 @@
 module.exports = {
-  base: "/vuepress/",
+  base: "/vbook/",
   title: "BLOG",
   description: "学习笔记",
   dest: "./dist",
