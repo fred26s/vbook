@@ -1,9 +1,11 @@
 language: node_js
 node_js:
-- '8'
+- '10'
 branchs:
   only:
   - master
+install:
+  - yarn
 addons:
   ssh_known_hosts:
   - 182.92.131.201
