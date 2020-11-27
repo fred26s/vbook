@@ -6,6 +6,8 @@ branchs:
   - master
 install:
   - npm install
+script:
+  - npm run test
 addons:
   ssh_known_hosts:
   - 182.92.131.201
