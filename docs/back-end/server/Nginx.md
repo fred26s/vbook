@@ -176,7 +176,7 @@ server {
 
    alias：表示直接替换掉 location 指定的 url；
 
-   ​ **需要注意 alias 指定的 url，结尾要以`/`结尾！否则会出现无法匹配**
+    **需要注意 alias 指定的 url，结尾要以`/`结尾！否则会出现无法匹配**
 
    root：表示将新路径拼接到 location 之前
 
@@ -337,6 +337,46 @@ $ sudo systemctl status nginx
 或者
 $ sudo service nginx status
 ```
+
+### window
+
+```
+1、启动：
+
+C:\server\nginx-1.0.2>start nginx
+
+或
+
+C:\server\nginx-1.0.2>nginx.exe
+
+注：建议使用第一种，第二种会使你的cmd窗口一直处于执行中，不能进行其他命令操作。
+
+2、停止：
+
+C:\server\nginx-1.0.2>nginx.exe -s stop
+
+或
+
+C:\server\nginx-1.0.2>nginx.exe -s quit
+
+注：stop是快速停止nginx，可能并不保存相关信息；quit是完整有序的停止nginx，并保存相关信息。
+
+3、重新载入Nginx：
+
+C:\server\nginx-1.0.2>nginx.exe -s reload
+
+当配置信息修改，需要重新载入这些配置时使用此命令。
+
+4、重新打开日志文件：
+
+C:\server\nginx-1.0.2>nginx.exe -s reopen
+
+5、查看Nginx版本：
+
+C:\server\nginx-1.0.2>nginx -v
+```
+
+
 
 ## nginx 配置 gzip 压缩
 
