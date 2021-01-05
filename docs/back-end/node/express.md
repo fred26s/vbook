@@ -228,3 +228,16 @@ app.use('/cell', cellRouter, function(req, res, next) {
 next('route')，表示跳过当前路由分组中，剩余的中间件handler；
 
 next('router')，表示跳过当前整个路由router，上例跳过router后，就进入了`/cell`路由的第二个中间件；
+
+
+
+
+
+# 发布记录
+
+|                    | sxh-admin | sxh-serve | wx-program | upyun-serve |
+| ------------------ | --------- | --------- | ---------- | ----------- |
+| 2020-12-31(before) | 0.2.1     | 1.0.0     | 1.1.3      | 1.0.0       |
+| 2020-12-31         | 1.0.0     | 1.0.1     | 1.1.4      | 1.0.0       |
+|                    |           |           |            |             |
+
