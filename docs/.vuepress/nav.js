@@ -10,6 +10,7 @@ module.exports = [
       { text: "网络基础", link: "/front-end/net/网络基础.md" },
       { text: "开发工具", link: "/front-end/tools/GIT.md" },
       { text: "前端自动化", link: "/front-end/ci/travis自动部署.md" },
+      { text: "wx生态开发", link: "/front-end/wx/wx-miniprogram.md" },
     ],
   },
   {
