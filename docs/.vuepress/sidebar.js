@@ -8,6 +8,7 @@ module.exports = {
   "/front-end/tools/": require("../front-end/tools/sidebar"),
   "/front-end/ci/": require("../front-end/ci/sidebar"),
   "/front-end/wx/": require("../front-end/wx/sidebar"),
+  "/front-end/lib/": require("../front-end/lib/sidebar"),
   // 后端
   "/back-end/node/": require("../back-end/node/sidebar"),
   "/back-end/lib-web/": require("../back-end/lib-web/sidebar"),

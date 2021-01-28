@@ -11,6 +11,7 @@ module.exports = [
       { text: "开发工具", link: "/front-end/tools/GIT.md" },
       { text: "前端自动化", link: "/front-end/ci/travis自动部署.md" },
       { text: "wx生态开发", link: "/front-end/wx/wx-miniprogram.md" },
+      { text: "前端类库", link: "/front-end/lib/echarts.md" },
     ],
   },
   {
