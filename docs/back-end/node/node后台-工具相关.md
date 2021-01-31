@@ -115,6 +115,23 @@ Authentication plugin 'caching_sha2_password' cannot be loaded
 
 然后就可以解决此问题。
 
+### 无法启动服务问题
+
+- 启动服务时提示`mysql服务无法启动 服务没有报告任何错误`
+
+  目前实测可以解决的一个方案是
+
+  1. 先删除mysql安装根目录下的`/data/`文件夹；
+  2. 再重新执行一遍上述的第三步`生成 data 文件`，进行初始化；
+  3. 初始化`/data/`后，就依次走一遍上述的配置流程；
+  4. 解决问题。
+
+
+
+
+
+## shellJS
+
 > Shelljs 是 Node.js 下的脚本语言解析器，具有丰富且强大的底层操作(Windows/Linux/OS X)权限。Shelljs 本质就是基于 node 的一层命令封装插件，让前端开发者可以不依赖 linux 也不依赖类似于 cmder 的转换工具，而是直接在我们最熟悉不过的 javascript 代码中编写 shell 命令实现功能。
 >
 > shelljs 做的事就是自动化，从耗时的重复性常规动作里解放出来，提升开发效率和工作心情。
