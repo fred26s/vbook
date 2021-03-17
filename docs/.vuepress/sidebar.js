@@ -15,4 +15,5 @@ module.exports = {
   "/back-end/server/": require("../back-end/server/sidebar"),
   // 兴趣点
   "/funs/hardware/": require("../funs/hardware/sidebar"),
+  "/funs/crypt-currency/": require("../funs/crypt-currency/sidebar"),
 };

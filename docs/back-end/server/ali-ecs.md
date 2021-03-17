@@ -395,3 +395,18 @@ CREATE USER 'root'@'%' IDENTIFIED BY 'password';
 后期考虑修改`serve`代码，以事务为原子模块，进行实时开关数据库的操作；
 
 保证每次请求，都是重新连接当前的`mysql`服务。
+
+
+
+
+
+## 服务器迁移
+
+1. 买新服务器
+2. 买域名
+3. 在旧服务器创建服务器共享镜像
+4. 使用新服务器创建共享实例
+
+> [ECS实例间迁移](https://www.alibabacloud.com/help/zh/doc-detail/171197.htm)
+>
+> [复制镜像创建实例](https://www.alibabacloud.com/help/zh/doc-detail/25462.htm?spm=a2c63.p38356.879954.3.4d8f38bbw09Nrm#concept-a3m-5dm-xdb)
