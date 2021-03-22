@@ -447,7 +447,7 @@ branchs:
   - master
 addons:
   ssh_known_hosts:
-  - 182.92.131.201
+  - 8.140.151.101
 install: # 在安装项目环境阶段需要运行的命令，一条一行，类似的还有 before_install
   - source travis_init.sh # 执行指定的 shell 脚本来做初始化
 script: # 在构建阶段需要运行的命令，一条一行，类似的还有 before_script、after_script
