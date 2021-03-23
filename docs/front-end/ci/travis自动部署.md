@@ -470,3 +470,4 @@ after_success:
 
 ## 9.更换服务器
 
+删除travis全局变量，测试
