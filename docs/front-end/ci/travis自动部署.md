@@ -290,6 +290,8 @@ Usage: travis COMMAND ...
 
 执行下面命令生成加密的私钥文件
 
+> 这里`travis login`实测无法登录，目前未知具体原因；但解决方案是使用`travis login --github-token xxxx`登录，token是从github dev token获取；
+
 ```
 #首先用GitHub账户登陆travis
 [travis@VM_156_69_centos blog-front]$ travis login
