@@ -471,4 +471,29 @@ after_success:
 ## 9.更换服务器
 
 - ~~删除travis全局变量，测试~~
-- 更新git ssh公钥，测试
+- ~~更新git ssh公钥，测试~~
+
+> 背景：因合约到期更换了一台服务器，发现之前配置好的blogCI，推送远端后构建失败了；
+
+### 尝试解决：
+
+上述步骤第3步-6步，重新执行了一遍（思路没问题，但还是没有成功）；
+
+travis报错显示了：
+
+```
+$ openssl aes-256-cbc -K $encrypted_04674a2f3de9_key -iv $encrypted_04674a2f3de9_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d
+bad decrypt
+
+140428259944088:error:06065064:digital envelope routines:EVP_DecryptFinal_ex:bad decrypt:evp_enc.c:529:
+
+The command "openssl aes-256-cbc -K $encrypted_04674a2f3de9_key -iv $encrypted_04674a2f3de9_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d" failed and exited with 1 during .
+```
+
+根据现实是解密travis加密文件时发生了错误；
+
+所以追根溯源，发现了刚才操作的问题：
+
+1. 重新执行了上述配置步骤，生成了新的`id_rsa.enc`加密文件；
+2. 但问题是这步操作是在linux服务器执行；所以需要将该加密文件，提交至git仓库，用来给travis服务器使用；（并且很多人反馈若在windows生成的`id_rsa.enc`很可能解析失败，所以还是在linux上生成为好）
+3. 所以将服务器上加密文件同步上传git即可；
