@@ -470,4 +470,5 @@ after_success:
 
 ## 9.更换服务器
 
-删除travis全局变量，测试
+- ~~删除travis全局变量，测试~~
+- 更新git ssh公钥，测试
