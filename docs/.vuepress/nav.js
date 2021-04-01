@@ -25,7 +25,7 @@ module.exports = [
   {
     text: "JustDoIT",
     items: [{ text: "硬件", link: "/funs/hardware/arduino.md" },
-    { text: "加密货币", link: "/funs/crypt-currency/coin.md" }],
+    { text: "加密货币", link: "/funs/crypt-currency/btc.md" }],
   },
   //   { text: "关于", link: "/About/about.md" },
   //   { text: "Github", link: "https://github.com/xrw99" },

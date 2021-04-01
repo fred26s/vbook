@@ -1,9 +1,10 @@
 module.exports = [
   {
     title: "cryptCurrency",
-    collapsable: false,
+    collapsable: true,
     children: [
-      { title: "cryptCurrency", path: "/funs/crypt-currency/coin.md" }
+      { title: "btc", path: "/funs/crypt-currency/btc.md" },
+      { title: "eth", path: "/funs/crypt-currency/eth.md" }
     ],
   },
 ];
