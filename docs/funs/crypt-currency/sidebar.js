@@ -4,7 +4,8 @@ module.exports = [
     collapsable: true,
     children: [
       { title: "eth", path: "/funs/crypt-currency/eth.md" },
-      { title: "eth扩容", path: "/funs/crypt-currency/eth扩容.md" }
+      { title: "eth扩容", path: "/funs/crypt-currency/eth扩容.md" },
+      { title: "defi", path: "/funs/crypt-currency/defi.md" }
     ],
   },
   {
