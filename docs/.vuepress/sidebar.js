@@ -16,4 +16,5 @@ module.exports = {
   // 兴趣点
   "/funs/hardware/": require("../funs/hardware/sidebar"),
   "/funs/crypt-currency/": require("../funs/crypt-currency/sidebar"),
+  "/funs/finance/": require("../funs/finance/sidebar"),
 };

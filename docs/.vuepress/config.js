@@ -13,7 +13,7 @@ module.exports = {
   themeConfig: {
     nav: require("./nav"),
     sidebar: require("./sidebar"),
-    // sidebarDepth: 2, // 侧边栏层级【默认3】
+    sidebarDepth: 2, // 侧边栏层级【默认3】
     // lastUpdated: "Last Updated",
     searchMaxSuggestoins: 10,
     serviceWorker: {
