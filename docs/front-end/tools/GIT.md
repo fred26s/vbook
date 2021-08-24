@@ -75,7 +75,7 @@ $ ssh -T git@gitee.com
 
 处理方法:
 
-​ 修改小乌龟的`SSH cilent`地址；
+ 修改小乌龟的`SSH cilent`地址；
 
 1. 打开设置`Setting --- Network ---SSH`;
 
@@ -84,3 +84,16 @@ $ ssh -T git@gitee.com
    `Git`安装地址中的`SSH.exe`;
 
 3. 一般地址为`X:XX/Git/usr/bin/SSH.exe`;
+
+
+
+
+
+## github已不支持密码push
+
+[自2021年8月13日起，github不再支持使用密码push的方式](https://www.cnblogs.com/sober-orange/p/git-token-push.html)
+
+解决方案
+
+- 使用SSH
+- 使用Personal access token
