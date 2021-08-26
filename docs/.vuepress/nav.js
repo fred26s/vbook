@@ -5,12 +5,11 @@ module.exports = [
     items: [
       { text: "前端优化", link: "/front-end/evo/优化方式.md" },
       { text: "JS", link: "/front-end/js/es6知识.md" },
-      { text: "VUE", link: "/front-end/vue/vue知识点.md" },
+      { text: "框架", link: "/front-end/frame/vue知识点.md" },
       { text: "Webpack", link: "/front-end/webpack/webpack基础.md" },
       { text: "网络基础", link: "/front-end/net/网络基础.md" },
       { text: "开发工具", link: "/front-end/tools/GIT.md" },
       { text: "前端自动化", link: "/front-end/ci/travis自动部署.md" },
-      { text: "wx生态开发", link: "/front-end/wx/wx-miniprogram.md" },
       { text: "前端类库", link: "/front-end/lib/echarts.md" },
       { text: "移动端", link: "/front-end/移动端/混合开发.md" },
     ],
