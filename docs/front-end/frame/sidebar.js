@@ -10,6 +10,14 @@ module.exports = [
     ],
   },
   {
+    title: "Vue3",
+    collapsable: true,
+    children: [
+      { title: "vue3知识点", path: "/front-end/frame/vue3" },
+      { title: "vite", path: "/front-end/frame/vite" },
+    ],
+  },
+  {
     title: "react",
     collapsable: true,
     children: [
