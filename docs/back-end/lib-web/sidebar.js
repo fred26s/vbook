@@ -8,6 +8,7 @@ module.exports = [
       { title: "用户邮箱注册", path: "/back-end/lib-web/用户邮箱注册" },
       { title: "加密算法", path: "/back-end/lib-web/加密算法" },
       { title: "HTTPS", path: "/back-end/lib-web/HTTPS" },
+      { title: "云服务", path: "/back-end/lib-web/云服务" },
     ],
   },
 ];
