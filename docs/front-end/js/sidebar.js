@@ -3,8 +3,10 @@ module.exports = [
     title: "JS知识",
     collapsable: true,
     children: [
+      { title: "JS基础", path: "/front-end/js/JS基础" },
       { title: "ES6", path: "/front-end/js/es6知识" },
-      { title: "技巧函数", path: "/front-end/js/技巧函数" },
+      { title: "手写函数实现", path: "/front-end/js/手写函数实现" },
+      { title: "工具函数", path: "/front-end/js/工具函数" },
     ],
   },
   {
