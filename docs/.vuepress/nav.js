@@ -4,7 +4,7 @@ module.exports = [
     text: "前端学习笔记",
     items: [
       { text: "前端优化", link: "/front-end/evo/优化方式.md" },
-      { text: "JS", link: "/front-end/js/es6知识.md" },
+      { text: "JS", link: "/front-end/js/JS基础.md" },
       { text: "框架", link: "/front-end/frame/vue知识点.md" },
       { text: "Webpack", link: "/front-end/webpack/webpack基础.md" },
       { text: "网络基础", link: "/front-end/net/网络基础.md" },
