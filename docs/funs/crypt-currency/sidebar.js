@@ -10,6 +10,7 @@ module.exports = [
       { title: "solana", path: "/funs/crypt-currency/SOL.md" },
       { title: "terra", path: "/funs/crypt-currency/terra.md" },
       { title: "数字钱包", path: "/funs/crypt-currency/数字钱包.md" },
+      { title: "dYdX", path: "/funs/crypt-currency/dYdX.md" },
     ],
   },
   {

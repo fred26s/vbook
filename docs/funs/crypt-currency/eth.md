@@ -1,3 +1,5 @@
+[[toc]]
+
 ## 区块链的定义
 
 区块链就是一个**具有共享状态的密码性安全交易的单机(cryptographically secure transactional singleton machine with shared-state)**。这有点长，让我们将它分开来看：

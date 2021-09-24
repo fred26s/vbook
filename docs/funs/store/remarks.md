@@ -43,6 +43,8 @@
 
 [marked库](https://github.com/markedjs/marked)
 
+[markdown-it(vuePress使用的库)](https://github.com/markdown-it/markdown-it)
+
 ## 代码高亮
 
 [代码高亮highlight.js](https://github.com/highlightjs/highlight.js/)
