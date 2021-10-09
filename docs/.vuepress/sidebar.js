@@ -17,5 +17,6 @@ module.exports = {
   "/funs/hardware/": require("../funs/hardware/sidebar"),
   "/funs/crypt-currency/": require("../funs/crypt-currency/sidebar"),
   "/funs/finance/": require("../funs/finance/sidebar"),
+  "/funs/medical/": require("../funs/medical/sidebar"),
   "/funs/store/": require("../funs/store/sidebar"),
 };
