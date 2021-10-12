@@ -15,7 +15,7 @@ module.exports = [
     collapsable: true,
     children: [
       { title: "JS算法", path: "/front-end/js/算法" },
-      { title: "常见算法题目", path: "/front-end/js/算法题" },
+      // { title: "常见算法题目", path: "/front-end/js/算法题" },
     ],
   },
 ];
