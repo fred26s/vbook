@@ -48,6 +48,8 @@ linux 目录实际可以理解为是一个树状结构，
 | 可变动的(variable) | /var/mail (使用者邮件信箱) | /var/run (程序相关)     |     |
 |                    | /var/spool/news (新闻组)   | /var/lock (程序相关)    |     |
 
+![linux目录](https://img.joyfred.com/vuepress/server/linux%E7%9B%AE%E5%BD%95.png)
+
 ## 路径
 
 #### 相对路径：
