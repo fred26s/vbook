@@ -11,6 +11,7 @@ module.exports = [
       { title: "terra", path: "/funs/crypt-currency/terra.md" },
       { title: "数字钱包", path: "/funs/crypt-currency/数字钱包.md" },
       { title: "dYdX", path: "/funs/crypt-currency/dYdX.md" },
+      { title: "跨链", path: "/funs/crypt-currency/跨链.md" },
     ],
   },
   {
@@ -19,6 +20,13 @@ module.exports = [
     children: [
       { title: "btc", path: "/funs/crypt-currency/btc.md" },
       { title: "灰度", path: "/funs/crypt-currency/灰度.md" },
+    ],
+  },
+  {
+    title: "ALT",
+    collapsable: true,
+    children: [
+      { title: "FTX", path: "/funs/crypt-currency/FTX.md" },
     ],
   },
 ];
