@@ -9,6 +9,7 @@ module.exports = [
       { title: "加密算法", path: "/back-end/lib-web/加密算法" },
       { title: "HTTPS", path: "/back-end/lib-web/HTTPS" },
       { title: "云服务", path: "/back-end/lib-web/云服务" },
+      { title: "k8s", path: "/back-end/lib-web/k8s" },
     ],
   },
 ];

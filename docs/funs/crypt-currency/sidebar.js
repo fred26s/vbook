@@ -29,4 +29,11 @@ module.exports = [
       { title: "FTX", path: "/funs/crypt-currency/FTX.md" },
     ],
   },
+  {
+    title: "web3",
+    collapsable: true,
+    children: [
+      { title: "web3", path: "/funs/crypt-currency/web3.md" },
+    ],
+  },
 ];
