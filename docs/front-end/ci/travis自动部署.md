@@ -499,3 +499,19 @@ The command "openssl aes-256-cbc -K $encrypted_04674a2f3de9_key -iv $encrypted_0
 2. 但问题是这步操作是在linux服务器执行；所以需要将该加密文件，提交至git仓库，用来给travis服务器使用；（并且很多人反馈若在windows生成的`id_rsa.enc`很可能解析失败，所以还是在linux上生成为好）
 3. 所以将服务器上加密文件同步上传git即可；
 
+
+
+
+
+
+
+## 后续问题
+
+1. `fatal: unable to access 'https://xxxxxx@github.com/fred26s/vbook.git/': Empty reply from server`
+
+   考虑是HTTPS的GIT网络连接方式问题（GFW），切换SSH连接。
+
+   
+
+
+
