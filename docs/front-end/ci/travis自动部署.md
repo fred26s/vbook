@@ -511,6 +511,8 @@ The command "openssl aes-256-cbc -K $encrypted_04674a2f3de9_key -iv $encrypted_0
 
    考虑是HTTPS的GIT网络连接方式问题（GFW），切换SSH连接。
 
+   测试是否成功🆗
+
    
 
 
