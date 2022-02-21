@@ -1,8 +1,9 @@
 module.exports = [
   {
-    title: "医学",
+    title: "生活",
     collapsable: false,
     children: [
+      { title: "保险", path: "/funs/medical/insurer.md" },
       { title: "pregnant", path: "/funs/medical/pregnant.md" },
     ],
   },
