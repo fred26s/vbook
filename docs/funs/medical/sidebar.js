@@ -5,6 +5,7 @@ module.exports = [
     children: [
       { title: "保险", path: "/funs/medical/insurer.md" },
       { title: "pregnant", path: "/funs/medical/pregnant.md" },
+      { title: "新生儿", path: "/funs/medical/baby.md" },
     ],
   },
 ];
