@@ -4,7 +4,7 @@
 
 ## CDN 做了什么
 
-![img](//img.joyfred.com/vuepress/evo/cdn1.png)
+![img](//img.callbackhell.xyz/vuepress/evo/cdn1.png)
 
 从这张图出发，很形象的描述了一下 CDN 到底做了什么；
 

@@ -98,7 +98,7 @@ graph TB
   >
   > 6周岁：A+C群流脑疫苗：第2剂，白破疫苗：第1剂。
 
-  ![一类疫苗](https://img.joyfred.com/vuepress/funs/%E4%B8%80%E7%B1%BB%E7%96%AB%E8%8B%97.jpg)
+  ![一类疫苗](https://img.callbackhell.xyz/vuepress/funs/%E4%B8%80%E7%B1%BB%E7%96%AB%E8%8B%97.jpg)
 
   
 
@@ -120,7 +120,7 @@ graph TB
 
   
 
-  ![自费疫苗](https://img.joyfred.com/vuepress/funs/%E8%87%AA%E8%B4%B9%E7%96%AB%E8%8B%97.jpg)
+  ![自费疫苗](https://img.callbackhell.xyz/vuepress/funs/%E8%87%AA%E8%B4%B9%E7%96%AB%E8%8B%97.jpg)
 
 ### 接种知识点
 

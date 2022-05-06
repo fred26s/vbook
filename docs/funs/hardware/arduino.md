@@ -59,7 +59,7 @@ ARM 系列处理器是 32 位或 64 位处理器，是芯片，不是软件，�
 
 > 参考：https://zhuanlan.zhihu.com/p/51756186
 
-![1](//img.joyfred.com/vuepress/arduino/1.png)
+![1](//img.callbackhell.xyz/vuepress/arduino/1.png)
 
 ### 1.VCC 和 GND
 
@@ -83,7 +83,7 @@ Arduino 信息与其他设备信息交流就通过 I/O 接口完成，即上图�
 
 我们前面说了，几乎所有元件都有 GND 接口，但是 Arduino 只有 3 个 GND 接口，当使用元件很多的时候就不够用了；VCC 也有同样的问题，这个时候我们就需要使用面包板了。
 
-![2](//img.joyfred.com/vuepress/arduino/2.jpg)
+![2](//img.callbackhell.xyz/vuepress/arduino/2.jpg)
 
 我们观察上面的图示，上下四排插孔，每一排插孔由导线内部连接，中间每一列插孔也是内部连接（中间断开）。
 

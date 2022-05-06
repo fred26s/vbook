@@ -29,7 +29,7 @@
 
 ## js代码运行机制
 
-![js运行图](https://img.joyfred.com/vuepress/js/js%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png)
+![js运行图](https://img.callbackhell.xyz/vuepress/js/js%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.png)
 
 这是一张简单的JavaScript运行图，大致分为两个阶段，编译阶段和执行阶段。
 
