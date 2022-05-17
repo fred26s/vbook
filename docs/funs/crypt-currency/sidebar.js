@@ -27,6 +27,8 @@ module.exports = [
       { title: "solana", path: "/funs/crypt-currency/SOL.md" },
       { title: "terra", path: "/funs/crypt-currency/terra.md" },
       { title: "avax", path: "/funs/crypt-currency/avax.md" },
+      { title: "polygon-matic", path: "/funs/crypt-currency/polygon.md" },
+      { title: "fantom", path: "/funs/crypt-currency/fantom.md" },
       { title: "跨链", path: "/funs/crypt-currency/跨链.md" },
     ],
   },
