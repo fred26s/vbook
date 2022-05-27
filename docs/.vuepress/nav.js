@@ -28,7 +28,7 @@ module.exports = [
       { text: "硬件", link: "/funs/hardware/arduino.md" },
       { text: "加密货币", link: "/funs/crypt-currency/eth.md" },
       { text: "经济", link: "/funs/finance/经济学.md" },
-      { text: "医学", link: "/funs/medical/pregnant.md" },
+      { text: "生活", link: "/funs/medical/insurer.md" },
       { text: "仓库", link: "/funs/store/remarks.md" }
   ],
   },
