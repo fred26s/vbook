@@ -85,3 +85,32 @@ linux 目录实际可以理解为是一个树状结构，
 ## YUM Repository
 
 我们要使用 YUM，必须要先找到适合的 YUM Server，配置 YUM Repositry。CentOS 有很多的[镜像站点](<https://blog.51cto.com/7308310/(https://www.centos.org/download/mirrors/)>)供全世界软件更新之用。CentOS 安装后已配置好这些 Yum Repository，配置文件位于/etc/yum.repos.d 目录下，文件扩展名为 repo
+
+
+
+
+
+
+
+## linux常用命令
+
+- 关闭指定端口
+
+  ```
+  // 查看指定端口，例如3000
+  netstat -anp | grep 3000
+  tcp        0      0 0.0.0.0:3000            0.0.0.0:*               LISTEN      5632/node
+  
+  // 关闭指定端口对应的PID - 5632
+  kill 5632
+  ```
+
+- 查看所有端口
+
+  ```
+  netstat -tnl
+  ```
+
+  
+
+  
