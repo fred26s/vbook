@@ -91,9 +91,13 @@ John Carter的 “TTM squeez”波动率指标
 
 ## swagstep
 
-1. 网络知识 http + https + tcp + websocket + dns+文件流    1️⃣
-   - blob + Arraybuffer
+1. 网络知识 http + https + tcp + websocket + dns+文件流    1️⃣   
+   - blob + Arraybuffer 🕐80%
+   - websocket
+   - 编码方式 ASCⅡ、UNICODE、UTF8-16 ✅
 2. 前后台知识 nodejs + express + koa1/2 + nignx   1️⃣
+   - koa1/2
+   - nodejs相关
 3. 移动端 小程序 + 公众号  1️⃣      ---- 【7.30】
    - 公众号
      - 基础访问功能 - 图文聊天、内嵌H5、H5鉴权关联账号
@@ -103,6 +107,7 @@ John Carter的 “TTM squeez”波动率指标
       - 实时将图形组件转化为代码  【逻辑处理，字符串拼接】
       - 代码回显在页面编辑器 【monaco-editor】-（Monaco Editor 是支持VS Code的代码编辑器）
       - 页面配置逻辑，拖拽【vuedraggable】
+   2. pnpm
 5. 前端优化 webpack + vite ！
 6. 浏览器相关 渲染 + 解析 + 浏览器差异 ！     2️⃣---- 【8.13】
 7. 基础算法
