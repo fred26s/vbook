@@ -93,9 +93,11 @@ John Carter的 “TTM squeez”波动率指标
 
 1. 网络知识 http + https + tcp + websocket + dns+文件流 1️⃣
 
-   - blob + Arraybuffer 🕐80%
-   - websocket 
+   - blob + Arraybuffer✅
+   - websocket ✅实战DOING
+   - HTTP2服务器开启  DOING
    - 编码方式 ASCⅡ、UNICODE、UTF8-16 ✅
+   - tcp + http + http2 ✅
 
 2. 前后台知识 nodejs + express + koa1/2 + nignx 1️⃣
 
@@ -107,7 +109,7 @@ John Carter的 “TTM squeez”波动率指标
    - 公众号
      - 基础访问功能 - 图文聊天、内嵌H5、H5鉴权关联账号
      - 少量内容分享
-     - 智能问答聊天机器人 功能
+     - 智能问答聊天机器人 功能 DOING
      - 常见问题
    - 小程序
      - 框架
