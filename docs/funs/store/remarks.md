@@ -95,23 +95,24 @@ John Carter的 “TTM squeez”波动率指标
 
    - blob + Arraybuffer✅
    - websocket ✅实战DOING
-   - HTTP2服务器开启  DOING
+   - HTTP2服务器开启  ✅
    - 编码方式 ASCⅡ、UNICODE、UTF8-16 ✅
    - tcp + http + http2 ✅
 
-2. 前后台知识 nodejs + express + koa1/2 + nignx 1️⃣
+2. 前后台知识 nodejs + express + koa1/2 + nignx 1️⃣ 🕐
 
-   - koa1/2
-   - nodejs相关
+   - koa1/2  - express🕐
+   - nodejs相关基础🕐
+   - nginx代理 🕐
 
 3. 移动端 小程序 + 公众号 1️⃣ ---- 【7.30】
 
    - 公众号
      - 基础访问功能 - 图文聊天、内嵌H5、H5鉴权关联账号
-     - 少量内容分享
-     - 智能问答聊天机器人 功能 DOING
+     - 少量内容分享🕐
+     - 智能问答聊天机器人 功能 ✅
      - 常见问题
-   - 小程序
+   - 小程序🕐
      - 框架
      - 常见问题
 
@@ -136,7 +137,7 @@ John Carter的 “TTM squeez”波动率指标
 
    2️⃣---- 【8.13】 ----
 
-7. 基础算法  【每周 练习】
+7. 基础算法  【每周 练习】🕐 DOING
 
 8. JS基础+进阶 3️⃣---- 【9.3】
 
