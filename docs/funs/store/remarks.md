@@ -93,17 +93,18 @@ John Carter的 “TTM squeez”波动率指标
 
 1. 网络知识 http + https + tcp + websocket + dns+文件流 1️⃣
 
-   - blob + Arraybuffer✅
-   - websocket ✅实战DOING
-   - HTTP2服务器开启  ✅
-   - 编码方式 ASCⅡ、UNICODE、UTF8-16 ✅
-   - tcp + http + http2 ✅
+   - [blob + Arraybuffer✅](/article/图片/)
+   - [websocket](/article/网络基础/#websocket) ✅实战DOING
+   - [HTTP2服务器开启](/article/网络基础/#http2-x)  ✅
+   - [编码方式 ASCⅡ、UNICODE、UTF8-16](/article/图片/#编码方式) ✅
+   - [tcp](/article/网络基础/#tcp-和-udp)✅
+   - [http + http2](/article/网络基础/#http2-x) ✅
 
-2. 前后台知识 nodejs + express + koa1/2 + nignx 1️⃣ 🕐
+2. 前后台知识 nodejs + express + koa1/2 + nignx 1️⃣ 
 
    - koa1/2  - express🕐
    - nodejs相关基础🕐
-   - nginx代理 🕐
+   - nginx代理 
 
 3. 移动端 小程序 + 公众号 1️⃣ ---- 【7.30】
 
@@ -126,7 +127,11 @@ John Carter的 “TTM squeez”波动率指标
       - 页面配置逻辑，拖拽【vuedraggable】
    2. TS实战
    3. pnpm
-   4. vuepress2（升级迁移） + 组件文档
+   4. npm私服
+   5. vuepress2（升级迁移） + 组件文档
+   6. 微前端
+
+   2️⃣---- 【8.7】 ----
 
 5. 前端优化 webpack + vite ！
 
@@ -139,19 +144,24 @@ John Carter的 “TTM squeez”波动率指标
 
 7. 基础算法  【每周 练习】🕐 DOING
 
-8. JS基础+进阶 3️⃣---- 【9.3】
+8. JS基础+进阶 
 
    1. ES6、ES7、ES8、ES9、ES10、ES11、ES12
    2. 原型链
    3. 内存机制
    4. EventLoop
 
-9. 前端框架 vue2/3 + react ！ 4️⃣---- 【9.17~24】
+
+3️⃣---- 【8.21】
+
+1. 前端框架 vue2/3 + react ！ 
 
    - 框架进阶
      - @babel/parser - @babel/traverse - @babel/types
      - AST抽象语法树（Abstract Syntax Tree）
 
-10. 后期； 5️⃣---- 【X】
+   4️⃣---- 【9.17~24】
 
-11. 开发效率 ！
+2. 后期； 5️⃣---- 【X】
+
+3. 开发效率 ！
