@@ -102,7 +102,7 @@ John Carter的 “TTM squeez”波动率指标
 
 2. 前后台知识 nodejs + express + koa1/2 + nignx 1️⃣ 
 
-   - koa1/2  - express🕐
+   - [koa1/2  - express](/article/koa/#koa)✅
    - nodejs相关基础🕐
    - nginx代理 
 
@@ -165,3 +165,7 @@ John Carter的 “TTM squeez”波动率指标
 2. 后期； 5️⃣---- 【X】
 
 3. 开发效率 ！
+
+
+
+> [八股文指南](https://juejin.cn/post/7016593221815910408#heading-78)
