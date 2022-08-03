@@ -378,3 +378,13 @@ mapForPoint() {
 [获取权限 token](https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/access-token/auth.getAccessToken.html)
 
 [生成二维码](https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/qr-code/wxacode.getUnlimited.html)
+
+
+
+
+
+## 小程序常见问题
+
+> 参考资料：
+>
+> - [小程序架构详解](https://juejin.cn/post/7096422167016914957#heading-4)
