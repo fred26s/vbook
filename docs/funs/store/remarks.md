@@ -126,6 +126,7 @@ John Carter的 “TTM squeez”波动率指标
       - 代码回显在页面编辑器 【monaco-editor】-（Monaco Editor 是支持VS Code的代码编辑器）
       - 页面配置逻辑，拖拽【vuedraggable】
    2. TS实战
+      - 装饰器
    3. pnpm
    4. npm私服
    5. vuepress2（升级迁移） + 组件文档

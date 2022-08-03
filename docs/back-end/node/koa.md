@@ -50,6 +50,10 @@ Koa2 这个现在是 Koa 的默认版本，与 Koa1 最大的区别是**使用 E
 
       koa2的源码只有四个文件，500行左右。只提供封装好http上下文、请求、响应，以及基于async/await的中间件调用机制。
 
+  - 缺点
+
+    - koa本身几乎不带任何其他的库，如果需要使用路由、错误处理、认证等功能都需要自己安装并引入，什么都需要自己DIY。也可以说自主灵活性更高。
+
 ## 洋葱模型
 
 在 `koa` 中，中间件被 `next()` 方法分成了两部分。`next()` 方法上面部分会先执行，下面部门会在后续中间件执行全部结束之后再执行。
@@ -196,4 +200,81 @@ app.use(async (cxt, next) => {
 // 这里我们直接调用
 app.callback()
 ```
+
+
+
+## 基于koa的框架
+
+koa常常与express一起比较，都是偏底层的无态度的Web框架。
+
+而nest.js、egg.js，midway这种框架都是基于koa的**企业级框架**，覆盖各种开发需要的场景，增加了开发规范及各种插件。
+
+> 参考文档：
+>
+> [关于nodejs框架的对比](https://jishuin.proginn.com/p/763bfbd68a5d)
+
+## egg.js
+
+egg.js是阿里旗下基于node.js和koa是一个node**企业级应用开发框架**，可以帮助开发团队，和开发人员减少成本。 
+
+优点：
+
+- 一是它制定了一些开发规范，
+
+  Egg奉行『**约定优于配置**』，按照[一套统一的约定](https://www.eggjs.org/zh-CN/advanced/loader)进行应用开发，团队内部采用这种方式可以减少开发人员的学习成本，开发人员不再是『钉子』，可以流动起来。没有约定的团队，沟通成本是非常高的。
+
+- 二是它封装了很多通用基础功能。
+
+### 目录结构
+
+这是由 egg 框架或内置插件约定好的，是阿里总结出来的最佳实践，虽然框架也提供了让用户自定义目录结构的能力，但是依然建议大家采用阿里的这套方案。
+
+```markdown
+egg-project
+├── package.json
+├── app.js (可选)
+├── agent.js (可选)
+├── app/
+|   ├── router.js # 用于配置 URL 路由规则
+│   ├── controller/ # 用于存放控制器（解析用户的输入、加工处理、返回结果）
+│   ├── model/ (可选) # 用于存放数据库模型
+│   ├── service/ (可选) # 用于编写业务逻辑层
+│   ├── middleware/ (可选) # 用于编写中间件
+│   ├── schedule/ (可选) # 用于设置定时任务
+│   ├── public/ (可选) # 用于放置静态资源
+│   ├── view/ (可选) # 用于放置模板文件
+│   └── extend/ (可选) # 用于框架的扩展
+│       ├── helper.js (可选)
+│       ├── request.js (可选)
+│       ├── response.js (可选)
+│       ├── context.js (可选)
+│       ├── application.js (可选)
+│       └── agent.js (可选)
+├── config/
+|   ├── plugin.js # 用于配置需要加载的插件
+|   ├── config.{env}.js # 用于编写配置文件（env 可以是 default,prod,test,local,unittest）
+
+```
+
+> 参考资料：
+>
+> [egg.js使用详解](https://juejin.cn/post/6995063516470198279#heading-14)
+
+
+
+
+
+## midway
+
+技术层级区别：Midway.js ---|> Egg.js ---|> Koa.js；
+
+Midway 基于 TypeScript 开发，并且在egg的基础上支持了TS，还有类似于JAVA的OOP开发模式。
+
+
+
+## nest.js
+
+nestjs 是对标 java 的 spring 的，实现了 IOC、AOP 等模式，模块之间耦合度很低，就算再复杂的项目，通过 Module、Controller、Service 等也可以很好的被组织起来，相比 express 来说，组织代码方面提升了一个档次。
+
+遵循了Spring 设计思路。
 
