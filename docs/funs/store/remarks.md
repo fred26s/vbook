@@ -145,6 +145,7 @@ John Carter的 “TTM squeez”波动率指标
    - webview
    - jscore
    - webkit
+   - v8-chrome
 
    2️⃣---- 【8.13】 ----
 
