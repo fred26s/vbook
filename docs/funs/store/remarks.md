@@ -110,12 +110,12 @@ John Carter的 “TTM squeez”波动率指标
 
    - 公众号
      - 基础访问功能 - 图文聊天、内嵌H5、H5鉴权关联账号
-     - 少量内容分享🕐
+     - 少量内容分享
      - 智能问答聊天机器人 功能 ✅
-     - 常见问题
-   - 小程序🕐
-     - 框架
-     - 常见问题
+     - [常见问题](/article/微信公众号/#常见问题)
+   - 小程序
+     - [框架](/article/wx-miniprogram/#使用wepy框架)
+     - [常见问题](/article/wx-miniprogram/#小程序常见问题)
 
    1️⃣---- 【7.30】 ----
 
@@ -127,10 +127,11 @@ John Carter的 “TTM squeez”波动率指标
       - 页面配置逻辑，拖拽【vuedraggable】
    2. TS实战
       - 装饰器
-   3. pnpm
-   4. npm私服
+   3. pnpm 1
+   4. npm私服 1
    5. vuepress2（升级迁移） + 组件文档
    6. 微前端
+   7. jenkins
 
    2️⃣---- 【8.7】 ----
 
@@ -140,6 +141,10 @@ John Carter的 “TTM squeez”波动率指标
    - 浏览器performance调优
 
 6. 浏览器相关 渲染 + 解析 + 浏览器差异 ！ 2️⃣---- 【8.13】 
+
+   - webview
+   - jscore
+   - webkit
 
    2️⃣---- 【8.13】 ----
 
@@ -151,7 +156,6 @@ John Carter的 “TTM squeez”波动率指标
    2. 原型链
    3. 内存机制
    4. EventLoop
-
 
 3️⃣---- 【8.21】
 
