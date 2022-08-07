@@ -103,44 +103,44 @@ John Carter的 “TTM squeez”波动率指标
 2. 前后台知识 nodejs + express + koa1/2 + nignx 1️⃣ 
 
    - [koa1/2  - express](/article/koa/#koa)✅
-   - nodejs相关基础🕐
+   - nodejs相关基础🕐 2H
    - nginx代理 
 
-3. 移动端 小程序 + 公众号 1️⃣ ---- 【7.30】
+3. 移动端 小程序 + 公众号 1️⃣ ---- 【7.30】✅
 
-   - 公众号
+   - 公众号✅
      - 基础访问功能 - 图文聊天、内嵌H5、H5鉴权关联账号
      - 少量内容分享
      - 智能问答聊天机器人 功能 ✅
      - [常见问题](/article/微信公众号/#常见问题)
-   - 小程序
+   - 小程序✅
      - [框架](/article/wx-miniprogram/#使用wepy框架)
      - [常见问题](/article/wx-miniprogram/#小程序常见问题)
 
    1️⃣---- 【7.30】 ----
 
-4. 新技术了解 TS + 微前端 + 低代码平台 ！
+4. 新技术了解 TS + 微前端 + 低代码平台 ！               TOTAL-19H
 
-   1. LOWCODE
+   1. LOWCODE         4H
       - 实时将图形组件转化为代码 【逻辑处理，字符串拼接】
       - 代码回显在页面编辑器 【monaco-editor】-（Monaco Editor 是支持VS Code的代码编辑器）
       - 页面配置逻辑，拖拽【vuedraggable】
-   2. TS实战
+   2. TS实战🕐        5H
       - 装饰器
    3. pnpm 1
    4. npm私服 1
    5. vuepress2（升级迁移） + 组件文档
-   6. 微前端
+   6. 微前端           3H
    7. jenkins
 
    2️⃣---- 【8.7】 ----
 
-5. 前端优化 webpack + vite ！
+5. 前端优化 webpack + vite ！ 4H🕐
 
    - webpack优化插件
    - 浏览器performance调优
 
-6. 浏览器相关 渲染 + 解析 + 浏览器差异 ！ 2️⃣---- 【8.13】 
+6. 浏览器相关 渲染 + 解析 + 浏览器差异 ！ 2️⃣---- 【8.13】  3H🕐
 
    - webview
    - jscore
