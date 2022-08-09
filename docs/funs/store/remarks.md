@@ -103,7 +103,7 @@ John Carter的 “TTM squeez”波动率指标
 2. 前后台知识 nodejs + express + koa1/2 + nignx 1️⃣ 
 
    - [koa1/2  - express](/article/koa/#koa)✅
-   - nodejs相关基础🕐 2H
+   - [nodejs相关基础](/article/nodejs/#nodejs)
    - nginx代理 
 
 3. 移动端 小程序 + 公众号 1️⃣ ---- 【7.30】✅
@@ -140,7 +140,7 @@ John Carter的 “TTM squeez”波动率指标
    - webpack优化插件
    - 浏览器performance调优
 
-6. 浏览器相关 渲染 + 解析 + 浏览器差异 ！ 2️⃣---- 【8.13】  3H🕐
+6. [浏览器相关 渲染 + 解析 + 浏览器差异](/article/优化方式/#浏览器) ！ 2️⃣---- 【8.13】  ✅
 
    - webview
    - jscore
