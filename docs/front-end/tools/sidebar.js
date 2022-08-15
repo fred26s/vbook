@@ -8,6 +8,7 @@ module.exports = [
       { title: "HEXO", path: "/front-end/tools/HEXO" },
       { title: "Fiddler抓包", path: "/front-end/tools/Fiddler" },
       { title: "vscode", path: "/front-end/tools/vscode" },
+      { title: "markdown", path: "/front-end/tools/markdown" },
     ],
   },
   {
