@@ -9,6 +9,7 @@ module.exports = [
       { title: "Fiddler抓包", path: "/front-end/tools/Fiddler" },
       { title: "vscode", path: "/front-end/tools/vscode" },
       { title: "markdown", path: "/front-end/tools/markdown" },
+      { title: "npm", path: "/front-end/tools/npm" },
     ],
   },
   {
