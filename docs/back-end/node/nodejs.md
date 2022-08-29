@@ -52,7 +52,59 @@ Node.js 主要分为四大部分：
 >
 > 不需要修改文件后缀名，只需要在 package.json 中添加 `{"type": "module"}`属性。
 
-## 
+
+
+## Nodejs进程/线程
+
+我们知道node是单线程运行的。当我们用node app.js启动node服务的时候会在服务器上运行一个node的进程，我们的js代码只会在其中的一个线程运行
+
+在node的设计中就是将耗时长的操作代理给操作系统或者其他线程，这部分操作就是磁盘I/O和网络I/O等常见的异步操作，并且将这些耗时的操作从主线程上脱离。
+
+虽然node从语言层面不支持创建线程，但是我们可以通过child_process模块创建一个新的进程完成耗时耗费资源的操作，比如说要执行一段上传或下载大文件的shell脚本,然后将执行结果回传给主线程。
+
+### child_process创建子进程
+
+使用child_process创建子进程的方式主要有以下四种：
+exec、execFile、spawn、fork、
+关于其各自的用法请自行查阅文档
+[process_child文档](https://nodejs.org/api/child_process.html#child-process)
+
+
+
+## Nodejs执行shell
+
+在实现`前端工程化`的过程中，经常需要在一个js脚本中去执行其他`node`/`npm`或者其他`shell`命令。
+
+常见两种`node`调用`shell`的方法：
+
+- node原生模块：`child_process`
+
+  ```js
+  const process = require("child_process");
+  
+  // 执行 npm run build 命令
+  ;(function() {
+    process.exec('npm run build', (error, stdout, stderr) => {
+      if (!error) {
+        // 成功
+      } else {
+        // 失败
+      }
+    });
+  })();
+  ```
+
+  
+
+- npm包：`shelljs`
+
+
+
+
+
+
+
+
 
 ## 常用API
 
@@ -100,6 +152,12 @@ Node.js 主要分为四大部分：
 
 
 
+
+## 常见问题
+
+- 顶层作用域使用await
+
+  [为什么需要在 Nodejs 中使用顶层 await？](https://segmentfault.com/a/1190000039128424)
 
 
 

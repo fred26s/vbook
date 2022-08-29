@@ -104,6 +104,7 @@ John Carter的 “TTM squeez”波动率指标
 
    - [koa1/2  - express](/article/koa/#koa)✅
    - [nodejs相关基础](/article/nodejs/#nodejs)
+     - minimist 接收node命令行传参
    - nginx代理 
 
 3. 移动端 小程序 + 公众号 1️⃣ ---- 【7.30】✅
@@ -132,6 +133,7 @@ John Carter的 “TTM squeez”波动率指标
    5. vuepress2（升级迁移） + 组件文档
    6. 微前端           3H
    7. jenkins
+   8. git PR
 
    2️⃣---- 【8.7】 ----
 
@@ -139,6 +141,7 @@ John Carter的 “TTM squeez”波动率指标
 
    - webpack优化插件
    - 浏览器performance调优
+   - rollup 
 
 6. [浏览器相关 渲染 + 解析 + 浏览器差异](/article/优化方式/#浏览器) ！ 2️⃣---- 【8.13】  ✅
 
@@ -146,6 +149,7 @@ John Carter的 “TTM squeez”波动率指标
    - jscore
    - webkit
    - v8-chrome
+   - js内联和外部引入执行的异同
 
    2️⃣---- 【8.13】 ----
 
