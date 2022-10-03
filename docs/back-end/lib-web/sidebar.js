@@ -11,6 +11,7 @@ module.exports = [
       { title: "云服务", path: "/back-end/lib-web/云服务" },
       { title: "k8s", path: "/back-end/lib-web/k8s" },
       { title: "域名迁移", path: "/back-end/lib-web/域名迁移" },
+      { title: "serverless", path: "/back-end/lib-web/serverless" },
     ],
   },
 ];
