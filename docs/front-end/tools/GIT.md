@@ -108,3 +108,34 @@ $ ssh -T git@gitee.com
   > <REPO>：是你的仓库名称
   >
 
+
+
+
+
+### git rebase
+
+`git rebase`可以用来修改git提交历史信息；
+
+1. 记录需要修改的git记录 ID；
+
+   例如1-2-3，要修改2的话，那就记录3的ID；
+
+2. `git rebase -i ID3`
+
+3. 在vim中，修改对应commit数据(就是我们预期要修改的那条commit)的`pick`改为`edit`
+
+4. 保存退出(`esc`---`:wq`)
+
+5. 通过`git commit --amend`来修改用户信息；
+
+   `git commit --amend --author="姓名 <邮箱>" `
+
+   修改commit信息；
+
+   `git commit --amend --message="modify message xxx"`
+
+6. 继续完成rebase流程
+
+   `git rebase --continue`
+
+7. 查看日志，确认后通过`git push --force`将篡改历史纪录后的结果同步到服务器。
