@@ -93,17 +93,17 @@ John Carter的 “TTM squeez”波动率指标
 
 1. 网络知识 http + https + tcp + websocket + dns+文件流 1️⃣
 
-   - [blob + Arraybuffer✅](/article/图片/)
-   - [websocket](/article/网络基础/#websocket) ✅实战DOING
-   - [HTTP2服务器开启](/article/网络基础/#http2-x)  ✅
-   - [编码方式 ASCⅡ、UNICODE、UTF8-16](/article/图片/#编码方式) ✅
-   - [tcp](/article/网络基础/#tcp-和-udp)✅
-   - [http + http2](/article/网络基础/#http2-x) ✅
+   - [blob + Arraybuffer✅](/front-end/net/图片.html#blob)
+   - [websocket](/front-end/net/网络基础.html#websocket) ✅实战DOING
+   - [HTTP2服务器开启](/front-end/net/网络基础.html#http2-x)  ✅
+   - [编码方式 ASCⅡ、UNICODE、UTF8-16](//front-end/net/图片.html#编码方式) ✅
+   - [tcp](/front-end/net/网络基础.html#tcp-和-udp)✅
+   - [http + http2](/front-end/net/网络基础.html#http2-x) ✅
 
 2. 前后台知识 nodejs + express + koa1/2 + nignx 1️⃣ 
 
-   - [koa1/2  - express](/article/koa/#koa)✅
-   - [nodejs相关基础](/article/nodejs/#nodejs)
+   - [koa1/2  - express](/back-end/node/koa.html#koa)✅
+   - [nodejs相关基础](/back-end/node/nodejs.html)
      - minimist 接收node命令行传参
    - nginx代理 
 
@@ -113,10 +113,10 @@ John Carter的 “TTM squeez”波动率指标
      - 基础访问功能 - 图文聊天、内嵌H5、H5鉴权关联账号
      - 少量内容分享
      - 智能问答聊天机器人 功能 ✅
-     - [常见问题](/article/微信公众号/#常见问题)
+     - [常见问题](/front-end/移动端/微信公众号.html#常见问题)
    - 小程序✅
-     - [框架](/article/wx-miniprogram/#使用wepy框架)
-     - [常见问题](/article/wx-miniprogram/#小程序常见问题)
+     - [框架](/front-end/移动端/wx-miniprogram.html#使用wepy框架)
+     - [常见问题](/front-end/移动端/wx-miniprogram.html#小程序常见问题)
 
    1️⃣---- 【7.30】 ----
 
@@ -143,7 +143,7 @@ John Carter的 “TTM squeez”波动率指标
    - 浏览器performance调优
    - rollup 
 
-6. [浏览器相关 渲染 + 解析 + 浏览器差异](/article/优化方式/#浏览器) ！ 2️⃣---- 【8.13】  ✅
+6. [浏览器相关 渲染 + 解析 + 浏览器差异](/front-end/evo/浏览器.html#浏览器) ！ 2️⃣---- 【8.13】  ✅
 
    - webview
    - jscore

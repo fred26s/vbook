@@ -112,7 +112,7 @@ $ ssh -T git@gitee.com
 
 
 
-### git rebase
+## git rebase
 
 `git rebase`可以用来修改git提交历史信息；
 
