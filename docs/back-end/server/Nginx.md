@@ -237,6 +237,28 @@ server {
    // 结尾加'/'，最终URL为： http://127.0.0.1:8080/testget_list
    ```
 
+5. ### return 重定向
+
+   作用域：`server`，`location`，`if`
+
+   功能：停止处理并将指定的 code 码返回给客户端。
+
+   return 语句可以指定重定向 URI (状态码可以为如下几种 301，302，303，307)
+
+   ```nginx
+   location / {
+       return 302 http://www.xxxx.com;
+   }
+   ```
+
+   
+
+   
+
+
+
+
+
 这样就配置好了基础的 web 服务器，实现了基本功能；
 
 虽然 web 服务器的作用很简单，目的也很明确，就是管理静态资源；
