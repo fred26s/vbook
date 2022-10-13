@@ -203,6 +203,21 @@ app.callback()
 
 
 
+## koa使用
+
+### koa-generator
+
+快速生成koa项目结构
+
+```
+npm install -g koa-generator
+koa2
+```
+
+
+
+
+
 ## 基于koa的框架
 
 koa常常与express一起比较，都是偏底层的无态度的Web框架。
