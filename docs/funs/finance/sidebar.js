@@ -8,6 +8,7 @@ module.exports = [
       { title: "A股", path: "/funs/finance/A股.md" },
       { title: "CFD", path: "/funs/finance/CFD.md" },
       { title: "payment", path: "/funs/finance/payment.md" },
+      { title: "原油", path: "/funs/finance/crude.md" },
     ],
   },
 ];
