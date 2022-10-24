@@ -17,6 +17,7 @@ module.exports = [
     collapsable: true,
     children: [
       { title: "DOS", path: "/front-end/tools/windows-dos" },
+      { title: "powershell", path: "/front-end/tools/powershell" },
     ],
   },
 ];
