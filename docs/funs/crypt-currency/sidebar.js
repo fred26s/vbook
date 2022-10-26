@@ -30,6 +30,7 @@ module.exports = [
       { title: "polygon-matic", path: "/funs/crypt-currency/polygon.md" },
       { title: "fantom", path: "/funs/crypt-currency/fantom.md" },
       { title: "跨链", path: "/funs/crypt-currency/跨链.md" },
+      { title: "Aptos", path: "/funs/crypt-currency/Aptos.md" },
     ],
   },
   {
