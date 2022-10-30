@@ -106,10 +106,6 @@ Aptos 测试网已集结上百个应用。**生态的发展决定了一条 Layer
 
 
 
-
-
-
-
 > 参考资料：
 >
 > [Aptos首发详解](https://news.marsbit.co/20221018114102604701.html)
@@ -117,6 +113,67 @@ Aptos 测试网已集结上百个应用。**生态的发展决定了一条 Layer
 > [解读Aptos代币经济学](https://www.binance.com/zh-CN/news/top/7240623)
 
 
+
+
+
+
+
+### 
+
+## Move 
+
+> Move 是一种用于编写安全智能合约的编程语言，最初由 Facebook 开发，用于为 Libra 区块链提供支持。
+
+Aptos爆火就是因为以 Move 编程语言为核心编写的高性能新公链。
+
+Move是因为声称解决了solidity的安全性问题且降低开发门槛而出现在大众视野。
+
+
+
+### 语言特性
+
+- **纯静态语言**
+
+  动态调用是 Solidity 的基石，所有的跨合约调用都要通过动态调用来实现，例如 DelegateCall，但是也是大部分安全漏洞的入口，例如 TheDAO 攻击、PolyNetwork 跨链攻击等等。
+
+  鉴于 Solidity 的真实经验，Move 采用了完全纯静态的实现，更好的保障链上资产安全。
+
+-  **形式化验证**
+
+  形式化验证是 FV(formal verification) 是指使用数学工具分析设计可能行为的空间，而不是计算特定值的结果。也就是说，通过数学的手段证明程序的安全性。
+
+  Move 自带形式化验证的工具，我们可以使用数学的手段来测试和证明合约的可靠性，这是 Solidity 不可比拟的优势。
+
+-  **分散存储**
+
+  Web3 时代，用户掌握数据是所有权。Solidity 是通过 Map 的形式，集中存储合约数据，在合约出现漏洞的时候，例如获取到了合约 Owner 权限，所有用户数据都将遭受攻击。
+
+  Move 巧用 Resource，能够将数据分散的存储到每个用户自己的 Account 下，既保证了数据的安全，又真正的做到了数据的所有权归用户所有，合约的 Owner 没有修改数据的权限。
+
+-  **面向泛型编程**
+
+  出于安全的考虑，Move 设计成了纯静态语言， 但是灵活性并没有因此而减少，Move 通过面向泛型编程，保障了合约的扩展性，增加了代码的复用能力。
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+> 参考资料：
+>
+> [官方Aptos开发者文档](https://aptos.dev/)
+>
+> [为什么是 Move 之编程语言的生态构建](https://mirror.xyz/jolestar.eth/sQ0nMCO3eNig6gCzqQO7xew1mn8oUi1-rKtfZKmGlNI)
+>
+> [Move编程语言开发指南](https://move-book.com/cn/syntax-basics/concept.html)
 
 
 
