@@ -177,5 +177,58 @@ Move是因为声称解决了solidity的安全性问题且降低开发门槛而�
 
 
 
+## move开发
+
+1. [安装 Aptos CLI](https://aptos.dev/cli-tools/aptos-cli-tool/install-aptos-cli/)
+
+   直接下载预编译文件
+
+2. 安装开发依赖
+
+   macOS 和 Ubuntu Linux可以通过 Aptos [`dev_setup.sh`](https://github.com/aptos-labs/aptos-core/blob/main/scripts/dev_setup.sh)Bash 脚本或手动安装所有依赖项来执行此操作
+
+   windows系统的话，请手动安装这些软件包： 
+
+   - [锈](https://www.rust-lang.org/tools/install)
+   - [吉特](https://git-scm.com/download)
+   - [制作](https://cmake.org/download/)
+   - [LLVM](https://releases.llvm.org/)
+   - 仅限 Linux - [libssl-dev](https://packages.ubuntu.com/bionic/libssl-dev)和[libclang-dev](https://packages.ubuntu.com/bionic/libclang-dev)
+   - 仅限 Windows - [C++ 构建工具](https://visualstudio.microsoft.com/downloads/#microsoft-visual-c-redistributable-for-visual-studio-2022)
+
+3. 安装rust，rustup
+
+   [windows环境使用rustup安装](https://www.rust-lang.org/tools/install)
+
+   - 点击rustup安装包
+   - 命令行内按`1` 回车即可
+   - 自动安装c++相关依赖
+
+   当在`CMD`中执行`cargo --version`，看到版本信息打印时
+
+4. 使用cargo安装 move-analyzer
+
+   ``cargo install --git https://github.com/move-language/move move-analyzer`安装 语言服务器`
+
+5. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
