@@ -1,0 +1,1157 @@
+[33mcommit c9c9d6b34d9ceeabaca1acd3ba5b933213cbc553[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Mar 27 08:16:19 2023 +0800
+
+    fed资产和MBS
+
+[33mcommit 59af53b8f0e0d489eac643eb58820e1308fddff7[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: 酵父 <fred26s@163.com>
+Date:   Thu Mar 16 08:09:21 2023 +0800
+
+    fed资产与负债类目
+
+[33mcommit 62a1fcd6e48f375375dba60dc270e9be38c8415b[m
+Author: 酵父 <fred26s@163.com>
+Date:   Thu Mar 16 07:26:37 2023 +0800
+
+    调整资产负债表图片引用
+
+[33mcommit 68037d90f5f834243b37d41ed1da04b6f326c45b[m
+Author: 酵父 <fred26s@163.com>
+Date:   Wed Mar 15 08:14:40 2023 +0800
+
+    资产负债表.md 美联储.md
+
+[33mcommit d383741aaf6ccd32c780b2f0c1ff2b877025bd1a[m
+Author: 酵父 <fred26s@163.com>
+Date:   Thu Jan 26 10:45:23 2023 +0800
+
+    网络插座接线.img
+
+[33mcommit 1953799f396fa0f980b3ace7b3dfaaafe190b4af[m
+Author: jf <fred26s@163.com>
+Date:   Fri Nov 4 17:58:58 2022 +0800
+
+    原油历史.md
+
+[33mcommit 3fa9eca096768a528ac800c18df439d152bb2e2e[m
+Author: jf <fred26s@163.com>
+Date:   Thu Nov 3 13:53:23 2022 +0800
+
+    原油套期保值.md
+
+[33mcommit 0a4f57ad4722d4921882b3994cc64f5d29ac4b0d[m
+Author: jf <fred26s@163.com>
+Date:   Thu Nov 3 10:37:11 2022 +0800
+
+    页岩气.md
+
+[33mcommit 7853c2b34c314bb6d9efffa013b74db2581d4ac1[m
+Author: jf <fred26s@163.com>
+Date:   Mon Oct 31 18:30:07 2022 +0800
+
+    Aptos.md
+
+[33mcommit 338a0e5c71993b5a4ab8cc3569524000f15ff6b9[m
+Author: jf <fred26s@163.com>
+Date:   Sun Oct 30 23:41:25 2022 +0800
+
+    move.md
+
+[33mcommit bef50eb186ddbeba02fa71b4c126752e82344a15[m
+Author: jf <fred26s@163.com>
+Date:   Fri Oct 28 17:48:15 2022 +0800
+
+    原油需求
+
+[33mcommit 9508b64b5d647e914afa52cdcd7586d8b0a08c24[m
+Author: jf <fred26s@163.com>
+Date:   Thu Oct 27 18:19:25 2022 +0800
+
+    原油战略储备
+
+[33mcommit bd32f5b8e17197acfcf5d3877014ef92b2ac3250[m
+Author: jf <fred26s@163.com>
+Date:   Wed Oct 26 18:19:20 2022 +0800
+
+    Aptos.md
+
+[33mcommit 796078b88616a0dc6e9f8ebcc1faf2114839c8a0[m
+Author: jf <fred26s@163.com>
+Date:   Tue Oct 25 18:04:03 2022 +0800
+
+    库欣.md
+
+[33mcommit ff95854cdd5ee201bc039058377ea7c695f48034[m
+Author: jf <fred26s@163.com>
+Date:   Mon Oct 24 10:57:47 2022 +0800
+
+    powershell.md
+
+[33mcommit cff35ca04b0a7ac743dffd11bf84ab604f55d991[m
+Author: jf <fred26s@163.com>
+Date:   Mon Oct 17 17:19:52 2022 +0800
+
+    天然气.md
+
+[33mcommit 4ca27684c4b6777c4324e3d929fca49dab7b63b2[m
+Author: jf <fred26s@163.com>
+Date:   Mon Oct 17 16:36:25 2022 +0800
+
+    原油.md
+
+[33mcommit 4d83b42e787882c4ed5bc9fbcf14dcaf2e2cfb89[m
+Author: jf <fred26s@163.com>
+Date:   Fri Oct 14 18:21:15 2022 +0800
+
+    crude.md
+
+[33mcommit 9b70cae338af335c039cbea27c9d703c8904a224[m
+Author: jf <fred26s@163.com>
+Date:   Thu Oct 13 11:17:09 2022 +0800
+
+    CFD & payment.md
+
+[33mcommit f43372961df1f8243e89f99dc40e734daf3a0f93[m
+Author: jf <fred26s@163.com>
+Date:   Thu Oct 13 11:16:37 2022 +0800
+
+    koa-generator
+
+[33mcommit 2a0bb114ef078cf425b2976f63431a6ad2ac9644[m
+Author: jf <fred26s@163.com>
+Date:   Tue Oct 4 00:32:54 2022 +0800
+
+    remarks.md
+
+[33mcommit 9456220b51451d65f4cc74272e40ca03f08ac040[m
+Merge: b84c189 f096657
+Author: jf <fred26s@163.com>
+Date:   Mon Oct 3 23:51:35 2022 +0800
+
+    Merge branch 'feature'
+
+[33mcommit b84c18919b2ed348300bed7a4387b829b1f094b7[m
+Author: jf <fred26s@163.com>
+Date:   Mon Oct 3 23:47:29 2022 +0800
+
+    git rebase
+
+[33mcommit cd251014c07b022316babf0f21049135834d56e5[m
+Author: jf <fred26s@163.com>
+Date:   Mon Oct 3 23:39:55 2022 +0800
+
+    Nginx.md return
+
+[33mcommit cf472171b2a8f98f1e26f76db1ad34e04c21f7f6[m
+Author: jf <fred26s@163.com>
+Date:   Mon Oct 3 23:24:20 2022 +0800
+
+    serverless.md:  vercel+supabase
+
+[33mcommit f096657db1e7afe53be8f44daaf5f4c15d660126[m[33m ([m[1;31morigin/feature[m[33m)[m
+Author: jf <fred26s@163.com>
+Date:   Wed Sep 28 15:51:27 2022 +0800
+
+    切换为初始化打包，使用dist，去除文件夹命名permalink
+
+[33mcommit ebd4a7adfce5444fce681316b22d99d6f914a2c4[m
+Author: jf <fred26s@163.com>
+Date:   Thu Sep 1 18:52:48 2022 +0800
+
+    npm link
+
+[33mcommit 291e36ae9541f2464d7aa2087561e155f4f9ecd7[m
+Author: jf <fred26s@163.com>
+Date:   Mon Aug 29 18:33:02 2022 +0800
+
+    rollup.md
+
+[33mcommit 4139ced2d3efef511e76d0344d7785caccb18ed1[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sun Aug 28 22:06:11 2022 +0800
+
+    webrtc project
+
+[33mcommit 5566953e9b46a13ebdc55f78ba60ca913e458cd4[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sun Aug 28 17:31:07 2022 +0800
+
+    coturn.md服务
+
+[33mcommit 18b007bbab51166be61ed2ccf8a0fa3d23362113[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sun Aug 21 21:52:02 2022 +0800
+
+    webrtc TURN服务框架coturn
+
+[33mcommit 68da142608f45106750bf98f18c95e285fea8d32[m
+Author: jf <fred26s@163.com>
+Date:   Fri Aug 19 18:28:55 2022 +0800
+
+    npm.md
+
+[33mcommit b07159fe69cf6f5feeb006a777900c2971930129[m
+Author: jf <fred26s@163.com>
+Date:   Thu Aug 18 18:51:30 2022 +0800
+
+    疫苗.md
+
+[33mcommit 9d2062f72c5685b1ca8f500e56ef540529e1f4df[m
+Author: jf <fred26s@163.com>
+Date:   Tue Aug 16 18:17:51 2022 +0800
+
+    lottie.md
+
+[33mcommit d5681ca8aa38c942b92d22899a91af77a0d15c46[m
+Author: jf <fred26s@163.com>
+Date:   Mon Aug 15 18:40:05 2022 +0800
+
+    优化.md
+
+[33mcommit 98b216f28e78812f56b3063da8cbd0060ab6110e[m
+Author: jf <fred26s@163.com>
+Date:   Wed Aug 10 18:31:40 2022 +0800
+
+    优化.md
+
+[33mcommit 577f9d9690ae1b726c420cd17022641e22215781[m
+Author: jf <fred26s@163.com>
+Date:   Tue Aug 9 20:14:04 2022 +0800
+
+    浏览器.md
+
+[33mcommit 61884f3eb8f73fa6fc206fd5cdd2dc72a72d468c[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Aug 8 22:44:52 2022 +0800
+
+    nodejs.md
+
+[33mcommit 097c9ecc086dfccea4ccc935d26a73929aafa217[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sun Aug 7 23:10:05 2022 +0800
+
+    swagstep
+
+[33mcommit ab55fc2b850378bdf654dd2e4b0d374b6b7e304d[m
+Author: jf <fred26s@163.com>
+Date:   Fri Aug 5 18:25:22 2022 +0800
+
+    nodejs.md
+
+[33mcommit 052d1915d903bcf932525504d2fdbacf6f400149[m
+Author: jf <fred26s@163.com>
+Date:   Fri Aug 5 17:47:46 2022 +0800
+
+    小程序.md
+
+[33mcommit b636435dc80167594999bb248f3fef205d3c8cc8[m
+Author: 酵父 <fred26s@163.com>
+Date:   Wed Aug 3 22:42:32 2022 +0800
+
+    公众号.md
+
+[33mcommit f6a4c6e2d6fa22ce5d728ec446d3f67321540a5b[m
+Author: jf <fred26s@163.com>
+Date:   Wed Aug 3 18:25:09 2022 +0800
+
+    egg.js
+
+[33mcommit 104c08a8759e04b6e8d6f4ebb8f2abd1f8e28ecb[m
+Author: jf <fred26s@163.com>
+Date:   Wed Aug 3 13:54:07 2022 +0800
+
+    progress update
+
+[33mcommit 3e25fdeb68e710d122c57b7eb5efcd3d322ce1d9[m
+Author: jf <fred26s@163.com>
+Date:   Wed Aug 3 13:42:23 2022 +0800
+
+    koa.md
+
+[33mcommit 806a190ee3ac94d664b4154ef8dc54144cb5007d[m
+Author: jf <fred26s@163.com>
+Date:   Tue Aug 2 18:28:42 2022 +0800
+
+    增加lastUpdate；增加永久链接配置；
+
+[33mcommit 7028cce4395ad0aa07fdd33708b4067040eabd98[m
+Author: jf <fred26s@163.com>
+Date:   Mon Aug 1 18:06:53 2022 +0800
+
+    webRTC.md
+
+[33mcommit 296e3a4de74109117452560aa92348417f6e644d[m
+Author: jf <fred26s@163.com>
+Date:   Fri Jul 29 18:32:10 2022 +0800
+
+    影音流.md
+
+[33mcommit d0106d335d69e7ee67a35882f2f9c936c236695c[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Jul 25 22:56:04 2022 +0800
+
+    HTTP WS
+
+[33mcommit 815fe0191090d996770bae8399f6e85b935cd702[m
+Author: jf <fred26s@163.com>
+Date:   Mon Jul 25 18:19:02 2022 +0800
+
+    websocket.md
+
+[33mcommit 3f58bda41b4c968cc47b73fe2bcddf03ebb0acd8[m
+Author: jf <fred26s@163.com>
+Date:   Mon Jul 25 17:39:14 2022 +0800
+
+    ArrayBuffer.md
+
+[33mcommit 53f02a1c07b71e8e059df2786356972f3c34bc4a[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sun Jul 24 22:52:56 2022 +0800
+
+    swagstep
+
+[33mcommit 595c7e1dcafa71dc752e838f3a31d4d4bbd16896[m
+Author: jf <fred26s@163.com>
+Date:   Fri Jul 15 18:24:22 2022 +0800
+
+    blob类型互转；blob与剪贴板；swagplan；
+
+[33mcommit d503e699fbff564c8e9b412a499016efac6e9159[m
+Author: jf <fred26s@163.com>
+Date:   Fri Jul 15 10:08:56 2022 +0800
+
+    remark plan
+
+[33mcommit 29cf6fd9f8b7e6a3624b96258070f341b03272de[m
+Author: jf <fred26s@163.com>
+Date:   Wed Jul 13 17:59:55 2022 +0800
+
+    ArrayBuffer
+
+[33mcommit 950b5a5e2d340013ab6a9ad4fd4f29f41637a6e7[m
+Author: jf <fred26s@163.com>
+Date:   Wed Jul 13 17:14:52 2022 +0800
+
+    编码方式.md
+
+[33mcommit 4e6f628e7811776247d2c257ee76d32c0e0bf070[m
+Author: jf <fred26s@163.com>
+Date:   Wed Jul 6 20:39:11 2022 +0800
+
+    图片源类型.md
+
+[33mcommit b90e43411b2d174f46f142b2b3f09827f24c9bff[m
+Author: jf <fred26s@163.com>
+Date:   Mon Jul 4 16:54:25 2022 +0800
+
+    常用Linux命令
+
+[33mcommit bd61fc38229af124e4c178716790afd0de85b628[m
+Author: 酵父 <fred26s@163.com>
+Date:   Wed Jun 29 16:03:36 2022 +0800
+
+    日本货币政策.md
+
+[33mcommit cda9763266a11d44307108c3a87a7f41c94dbcf0[m
+Author: jf <fred26s@163.com>
+Date:   Fri Jun 24 18:00:12 2022 +0800
+
+    经常账户
+
+[33mcommit 98ad1dd51c847bc3edd850d16d716004a3f8d179[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Jun 6 00:29:15 2022 +0800
+
+    保险.md
+
+[33mcommit 9a802c599d8f0c436f017f3d6eebde9cedaf56a1[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sat Jun 4 03:05:22 2022 +0800
+
+    养老保险.md
+
+[33mcommit 4723bbff4cac0dc122eab8a9a0abf8b1206a277f[m
+Author: jf <fred26s@163.com>
+Date:   Wed Jun 1 18:32:57 2022 +0800
+
+    社保.md
+
+[33mcommit 858166eed2911dab0b98e1588b5b9e1ccef0b7fa[m
+Author: jf <fred26s@163.com>
+Date:   Mon May 30 18:15:49 2022 +0800
+
+    部分重疾保险知识
+
+[33mcommit 1ca3f2cfeba5bf93491f1b0b63c0c907c95c88df[m
+Author: jf <fred26s@163.com>
+Date:   Fri May 27 18:12:34 2022 +0800
+
+    人身保险.md
+
+[33mcommit 08ba8ac8d5de819b0e8d183b7a7b6cab24babe68[m
+Author: jf <fred26s@163.com>
+Date:   Fri May 27 15:13:56 2022 +0800
+
+    西餐.md
+
+[33mcommit be239b126242cfbc3d0069ab25ed9ba3a5483f58[m
+Author: jf <fred26s@163.com>
+Date:   Mon May 23 18:36:13 2022 +0800
+
+    微信公众号.md
+
+[33mcommit 4d2cbfe4c4d3036bc02f25f9b84019f7b19e9aee[m
+Author: jf <fred26s@163.com>
+Date:   Thu May 19 11:57:32 2022 +0800
+
+    fantom.md update
+
+[33mcommit 58b5e0bbf5f6788ffc68bd2d8fce350883857260[m
+Author: jf <fred26s@163.com>
+Date:   Tue May 17 18:12:01 2022 +0800
+
+    新增fantom.md、polygon.md
+
+[33mcommit 4f70dc40275d055708407ad148f52494fcc588f7[m
+Author: jf <fred26s@163.com>
+Date:   Tue May 17 17:20:47 2022 +0800
+
+    增加eth、稳定币相关
+
+[33mcommit c59d9eb763565181cce7623eb0be6ceb8b8a9cdc[m
+Author: jf <fred26s@163.com>
+Date:   Tue May 17 11:35:46 2022 +0800
+
+    avax.md
+
+[33mcommit c93658765fc60c24b9c6fc2d48eddae4116a45b2[m
+Author: jf <fred26s@163.com>
+Date:   Mon May 16 14:12:44 2022 +0800
+
+    更新发布记录.md
+
+[33mcommit 5d560d31506f7f0efa8d3c663244addbed41219e[m
+Author: jf <fred26s@163.com>
+Date:   Fri May 6 17:55:04 2022 +0800
+
+    更新upyun域名引用
+
+[33mcommit 093b87feb6d61c6b66ce211ab8c40adf2fbc778e[m
+Author: jf <fred26s@163.com>
+Date:   Mon Apr 25 18:32:22 2022 +0800
+
+    uni-v3.md
+
+[33mcommit a8d5d31675cb5add87b87b63282f4965fc31cc5e[m
+Author: jf <fred26s@163.com>
+Date:   Sun Apr 24 18:19:13 2022 +0800
+
+    crema.md
+
+[33mcommit 47c4f43d361663a29114648ed3841f1a90efaa5d[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sun Apr 17 22:44:56 2022 +0800
+
+    网络接线.md
+
+[33mcommit 7fefb759e6c75078cc66aa17a259a516d9673b44[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sun Apr 10 15:24:26 2022 +0800
+
+    域名迁移.md
+
+[33mcommit 3d59917723d5105ffecf7f694aff0fd4ef78b4d5[m
+Author: jf <fred26s@163.com>
+Date:   Thu Mar 31 18:00:19 2022 +0800
+
+    SSL阿里云部署
+
+[33mcommit 8401440245617a505aa3c471266ea03f32af6a47[m
+Author: jf <fred26s@163.com>
+Date:   Wed Mar 23 16:02:15 2022 +0800
+
+    域名迁移.md
+
+[33mcommit dd6736f5586e61e16be3ef115fde975ae5a832f9[m
+Author: 酵父 <fred26s@163.com>
+Date:   Tue Mar 1 22:25:59 2022 +0800
+
+    ftx现货杠杆
+
+[33mcommit fd09fd2c86079712149f85127f43498ea12c4a43[m
+Author: 酵父 <fred26s@163.com>
+Date:   Tue Mar 1 17:38:12 2022 +0800
+
+    路由器
+
+[33mcommit 1053274c0f1c372b0506db5c61916aeeb9965ecc[m
+Author: jf <fred26s@163.com>
+Date:   Mon Feb 28 17:23:13 2022 +0800
+
+    疫苗.md
+
+[33mcommit 6ce10d85aa6e8b5c352a5da205e10efe382d6611[m
+Author: jf <fred26s@163.com>
+Date:   Mon Feb 28 14:01:16 2022 +0800
+
+    修改计算
+
+[33mcommit 64f2a93ec07aa8025c4799773a5a46801873cd86[m
+Author: jf <fred26s@163.com>
+Date:   Tue Feb 22 16:23:57 2022 +0800
+
+    医保.md
+
+[33mcommit a6079079f2def9b807d3da558c7cb01a5ee5570d[m
+Author: jf <fred26s@163.com>
+Date:   Mon Feb 21 18:25:43 2022 +0800
+
+    医保.md
+
+[33mcommit ccbb382107161be606ea5015da996400f1185392[m
+Author: jf <fred26s@163.com>
+Date:   Wed Feb 16 18:03:48 2022 +0800
+
+    ssh修复CI流程
+
+[33mcommit dde8241240e35635387a2a3547a78060b6784aa8[m
+Author: jf <fred26s@163.com>
+Date:   Wed Feb 16 11:23:39 2022 +0800
+
+    ci问题
+
+[33mcommit baf99e2478c72939add7bf308951a9f001bd2c2c[m
+Author: jf <fred26s@163.com>
+Date:   Tue Feb 15 18:28:15 2022 +0800
+
+    服务器对比.md
+
+[33mcommit 98815b31f7d21d6346e2ab3931dc7ff7e66e917f[m
+Author: jf <fred26s@163.com>
+Date:   Wed Dec 22 11:39:20 2021 +0800
+
+    外汇准备金率
+
+[33mcommit c44aecf660e59d7535fdf896b4b794c310461476[m
+Author: jf <fred26s@163.com>
+Date:   Thu Dec 9 20:23:08 2021 +0800
+
+    web3
+
+[33mcommit a6c4d8666c11bdb701ac3b36cda89cc71d4734e2[m
+Author: jf <fred26s@163.com>
+Date:   Tue Nov 23 20:26:58 2021 +0800
+
+    CPI/PPI
+
+[33mcommit a9523e9be355acdf7d6bd5aff80100cb2a72623e[m
+Author: jf <fred26s@163.com>
+Date:   Sat Nov 20 18:04:49 2021 +0800
+
+    web3.0
+
+[33mcommit c2fe32f588f38210bf25e3f9dcf79edbc315aba2[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sun Nov 7 21:32:21 2021 +0800
+
+    trade.md策略
+
+[33mcommit b0933a9e3e6d16df2b88491c989148ea87c6dbbd[m
+Author: jf <fred26s@163.com>
+Date:   Fri Nov 5 17:59:03 2021 +0800
+
+    trade.md
+
+[33mcommit 5f588ffdc9651ef42b44a775818ea5bcde52d30d[m
+Author: jf <fred26s@163.com>
+Date:   Thu Nov 4 18:13:36 2021 +0800
+
+    trade.md
+
+[33mcommit 46eb1bcd0f196afc2ab976e673cdd509c490db84[m
+Author: jf <fred26s@163.com>
+Date:   Tue Oct 26 17:10:18 2021 +0800
+
+    ftx.md
+
+[33mcommit bbc404bdf297e8261554151c60efe228d1ffe8a3[m
+Author: jf <fred26s@163.com>
+Date:   Mon Oct 25 17:58:41 2021 +0800
+
+    碳达峰、戴维斯双击、跨期套利
+
+[33mcommit 900aac4475f8b8f38b0f5b1895c3a0a1a830da5f[m
+Author: jf <fred26s@163.com>
+Date:   Thu Oct 21 18:15:56 2021 +0800
+
+    现货/期货
+
+[33mcommit 34842688fb4fa91261233db58f2a995fef631a6d[m
+Author: jf <fred26s@163.com>
+Date:   Thu Oct 21 14:36:59 2021 +0800
+
+    逆回购
+
+[33mcommit 8080f20bab2fd2482c5208162ffa7afe4bcc2a99[m
+Author: jf <fred26s@163.com>
+Date:   Tue Oct 19 17:49:21 2021 +0800
+
+    人民币汇率 两融
+
+[33mcommit 391af026b2c5f5dc2da1f9a5387c46a30b7f115e[m
+Author: jf <fred26s@163.com>
+Date:   Fri Oct 15 17:29:00 2021 +0800
+
+    增加trade.md
+
+[33mcommit 3c1bdcf7ce8e6a4beeb25ffb2acc380a200f2b0c[m
+Author: jf <fred26s@163.com>
+Date:   Thu Oct 14 18:13:40 2021 +0800
+
+    vogue.md
+
+[33mcommit d5f47e4eba62ff38d0eb27aed4a9833b505615bc[m
+Author: jf <fred26s@163.com>
+Date:   Wed Oct 13 18:33:23 2021 +0800
+
+    国债.md
+
+[33mcommit d58205aa3e2e1d74298d8a46873034643d81e31a[m
+Author: jf <fred26s@163.com>
+Date:   Tue Oct 12 15:01:25 2021 +0800
+
+    基金LOF\ETF.md
+
+[33mcommit f619b7eb602d6a592b38d48c2872c609009eed5d[m
+Author: jf <fred26s@163.com>
+Date:   Mon Oct 11 18:01:24 2021 +0800
+
+    基金.md
+
+[33mcommit 1e6a343b22e27980a81d43d06d667bbf312deaed[m
+Author: jf <fred26s@163.com>
+Date:   Sat Oct 9 18:31:20 2021 +0800
+
+    medical.md
+
+[33mcommit c9afccc73ba2e5185df97d922d964fd28c32d1ca[m
+Author: jf <fred26s@163.com>
+Date:   Thu Sep 30 18:12:19 2021 +0800
+
+    js运行机制
+
+[33mcommit 00a2d55a61e9c5c901017950eeaf1e8b190072e7[m
+Author: jf <fred26s@163.com>
+Date:   Wed Sep 29 17:49:49 2021 +0800
+
+    地图坐标系.md
+
+[33mcommit 9e61412377596aec7bad82e3a16b9a615eed1822[m
+Author: jf <fred26s@163.com>
+Date:   Wed Sep 29 16:21:16 2021 +0800
+
+    更新window-dos.md
+
+[33mcommit 51e36cbdc3e0b6f9707d7e5df47e878577eb5e17[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Fri Sep 24 18:03:48 2021 +0800
+
+    dYdx.md
+
+[33mcommit 3fe92da204778baa3735aea340db08d182d8b899[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Thu Sep 23 18:32:40 2021 +0800
+
+    数据结构.md
+
+[33mcommit 23cbe62c8119ba17dba6ef1710ed9414fcda205d[m
+Merge: fd08382 73e5c9e
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Wed Sep 22 10:13:19 2021 +0800
+
+    Merge branch 'master' of https://github.com/fred26s/vbook
+
+[33mcommit 73e5c9edf9907b473a2519a5e8cad81c2858dcbf[m
+Author: 酵父 <fred26s@163.com>
+Date:   Tue Sep 21 23:27:56 2021 +0800
+
+    算法.md，js基础.md
+
+[33mcommit 7c25f86eb62d13d83200c7cb5bd0dc342d9152a8[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Sep 20 21:01:53 2021 +0800
+
+    算法.md
+
+[33mcommit fd08382ba2883ae190c28a9acf16d7a6a2d34853[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Sat Sep 18 18:26:28 2021 +0800
+
+    云服务.md
+
+[33mcommit e7d5a1f542481da66f9497f2e7b0dd8f8008a92f[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Sat Sep 18 17:48:06 2021 +0800
+
+    增加windows-dos.md
+
+[33mcommit 74d7c8d27f6ee7e337fac2968b68754eee573aea[m
+Author: 酵父 <fred26s@163.com>
+Date:   Fri Sep 17 23:43:41 2021 +0800
+
+    增加技巧函数.md
+
+[33mcommit fd1e8046cafed4bc487ee3aa66bb562557bfde4c[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Fri Sep 17 18:27:47 2021 +0800
+
+    技巧函数.md
+
+[33mcommit f041cc01f58d123dba571b4900b56eef2a3968a9[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Fri Sep 17 18:02:26 2021 +0800
+
+    vue3.md & vite.md
+
+[33mcommit 68c5d322b6cddb05cdfdd44ac3cdffd027455e91[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Fri Sep 10 18:33:23 2021 +0800
+
+    GIT版本分支管理.md
+
+[33mcommit 0b499b59d644443fd92912c798940acbcea85b3e[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Mon Aug 30 20:28:28 2021 +0800
+
+    编辑es6.md， 网络基础.md
+
+[33mcommit 8b8bc69733f07f6e00836f8d8ee2ff2676c156fe[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Thu Aug 26 18:18:05 2021 +0800
+
+    增加流媒体.md， 修改笔记分类
+
+[33mcommit 524787be785d2c46e588a4d68357948143e1d13c[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Wed Aug 25 18:26:48 2021 +0800
+
+    vue-router.md
+
+[33mcommit d0aed8b5f57b1e10c35af903a10f6579213cf608[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Tue Aug 24 17:53:00 2021 +0800
+
+    修改git.md
+
+[33mcommit c2b5c1ed182bcee333f7dd5e287c35da72ea33df[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Tue Aug 24 17:49:27 2021 +0800
+
+    git修改登陆方式
+
+[33mcommit dbf1439da01840fe1cb91d3669004190b81489ba[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Tue Aug 24 17:23:12 2021 +0800
+
+    移动端/混合开发.md
+
+[33mcommit c91fe355b9bf4efb748cc4bbebbd7b55ba19ee36[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Mon Aug 23 20:31:04 2021 +0800
+
+    更新
+
+[33mcommit 70526c45c8a94a9ae148810c6e2da75144219520[m
+Merge: c97225c 7847a56
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Tue Jul 6 20:03:13 2021 +0800
+
+    Merge branch 'master' of https://github.com/fred26s/vbook
+
+[33mcommit 7847a56e3a74b413f3a65e477e63db65a1eef2cf[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Jul 5 22:52:20 2021 +0800
+
+    增加灰度.md
+
+[33mcommit fb3a1a953c828ae7a20f21019bf90db0707c0f13[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sat May 22 00:47:26 2021 +0800
+
+    增加sol、terra、数字钱包.md
+
+[33mcommit c97225c83f6df9cf24cdafb5aa637bda0314bf9d[m
+Merge: 2b1a533 9e8c3df
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Tue May 11 16:52:58 2021 +0800
+
+    Merge branch 'master' of https://github.com/fred26s/vbook
+
+[33mcommit 9e8c3df1e2bc95204d4b6187362da54e41d6b3e8[m
+Author: 酵父 <fred26s@163.com>
+Date:   Fri May 7 22:15:58 2021 +0800
+
+    增加btc流动性借贷文档
+
+[33mcommit 2b1a5333eb1d718c1b033f3f19d96beb76e95c72[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Fri Apr 30 18:18:24 2021 +0800
+
+    扩容
+
+[33mcommit f84e69b74fc24fdf47b7f1dd6150f2eb389f413b[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Fri Apr 23 18:21:39 2021 +0800
+
+    增加跨链.md
+
+[33mcommit f5c95be9b5ff1030fa5eb20e849eb1a7215a1db4[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Fri Apr 9 18:20:56 2021 +0800
+
+    增加稳定币.md
+
+[33mcommit 22005306e1993daf21360046f1b339c9d8220867[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Wed Apr 7 18:11:56 2021 +0800
+
+    增加defi.md
+
+[33mcommit cb654bb28c2ee43ad0243e22eecf182810b71c4b[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Fri Apr 2 17:58:50 2021 +0800
+
+    增加eth POW概念
+
+[33mcommit 1ef83a591cab6213c62ce6b17f1f46accf16b9a4[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Fri Apr 2 10:23:59 2021 +0800
+
+    增加eth扩容.md
+
+[33mcommit 868b16822008ddc49089d5261cc60adb15491bd5[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Thu Apr 1 17:51:29 2021 +0800
+
+    增加eth layer2相关
+
+[33mcommit 15e2b233a235c3ba6976d9ffe7b50c3c57d425f7[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Wed Mar 24 11:44:49 2021 +0800
+
+    测试
+
+[33mcommit 3787db7a6022951bb98dfa3f8308c70547ef1544[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Wed Mar 24 11:07:32 2021 +0800
+
+    更新md，测试替换服务器功能ok
+
+[33mcommit 87d0212206a5425af83bd2216243f88a91c1eb78[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Wed Mar 24 10:47:23 2021 +0800
+
+    替换密钥文件
+
+[33mcommit 7cc9e2e41046745139dc85ba2897fe1b114e26a7[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Wed Mar 24 10:13:45 2021 +0800
+
+    更新github公钥测试
+
+[33mcommit 1165cbdd7dd36c45e9f5fc3cad171ea203666711[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Tue Mar 23 17:42:18 2021 +0800
+
+    测试SSH
+
+[33mcommit 5c758772ac68056fd234affb5e1d57aad96beddb[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Tue Mar 23 17:16:00 2021 +0800
+
+    测试更换SSH服务起IP
+
+[33mcommit bbedd38483bf8436f13ebb20ee6cfea39e5847b0[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Tue Mar 23 16:12:38 2021 +0800
+
+    增加登录travis方式说明
+
+[33mcommit 515201d7b1c60cbc668e5e522de2d8485ca842dc[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Mon Mar 22 17:18:50 2021 +0800
+
+    更新服务器IP
+
+[33mcommit 3c2c8d9a493e9b7d4d9e48afbd3e3a30efb0ea5d[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Wed Mar 17 17:18:30 2021 +0800
+
+    加密货币.mc
+
+[33mcommit f47760883e07fde4af732bb0b642ee25d92a0a21[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sun Jan 31 15:48:14 2021 +0800
+
+    增加mysql.md 报错解决方案
+
+[33mcommit 31241d85c010e0a78a4e3e38210452982333aa5e[m
+Author: fred26s <fred26s@163.com>
+Date:   Thu Jan 28 20:44:08 2021 +0800
+
+    增加发布记录.md
+
+[33mcommit cee904f7ada7fc5062b1c6c22c38ee54dbbd24d9[m
+Author: fred26s <fred26s@163.com>
+Date:   Thu Jan 28 17:13:03 2021 +0800
+
+    增加echarts.md
+
+[33mcommit f43bf586fcf79e23e59424aa02e38a637e5b29ca[m
+Merge: aefc385 6bc9fea
+Author: fred26s <fred26s@163.com>
+Date:   Tue Jan 5 17:50:15 2021 +0800
+
+    Merge branch 'master' of https://github.com/fred26s/vbook
+
+[33mcommit aefc385f818bf910b9b869503c620a2d65f11ddc[m
+Author: fred26s <fred26s@163.com>
+Date:   Tue Jan 5 17:49:18 2021 +0800
+
+    增加微信小程序.md
+
+[33mcommit 6bc9feafd8deb82a7369d6f4c876d6e0c0b61a2d[m
+Author: 酵父 <fred26s@163.com>
+Date:   Thu Dec 31 22:16:39 2020 +0800
+
+    增加发布版本记录
+
+[33mcommit 8cdb746b149701a834872c718414b9c44dfe8432[m
+Author: fred26s <fred26s@163.com>
+Date:   Tue Dec 29 15:42:02 2020 +0800
+
+    增加nginx, windows命令
+
+[33mcommit 6ebffdd9c079d566dabfb5abbe2ce80a5bc441f2[m
+Author: fred26s <fred26s@163.com>
+Date:   Fri Dec 25 13:51:30 2020 +0800
+
+    增加HTTPheader对文件下载的影响
+
+[33mcommit e959c76d11a2dff83d24090ed9c8f28caea6411d[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sun Nov 29 17:58:12 2020 +0800
+
+    增加vscode.ms
+
+[33mcommit f87a9d59e87f4fe067092ebff7271441b50882b0[m
+Author: fred26s <fred26s@163.com>
+Date:   Fri Nov 27 17:16:15 2020 +0800
+
+    修改构建方式，build放在服务器执行，忽略dist文件
+    这里修复了此前服务器build vuepress内存溢出的问题，（避免使用全局变量vueperss）安装了本地依赖
+
+[33mcommit 8c953f3fdb3fa54e078627c76fbeb96fe552dd6a[m
+Author: fred26s <fred26s@163.com>
+Date:   Fri Nov 27 10:25:32 2020 +0800
+
+    update again
+
+[33mcommit 3c8e379c824f2511e875856d27697d8da00c5886[m
+Author: fred26s <fred26s@163.com>
+Date:   Fri Nov 27 09:12:40 2020 +0800
+
+    update fix
+
+[33mcommit e99fb8b347e31f801afef701abd44c91fa3545f6[m
+Author: fred26s <fred26s@163.com>
+Date:   Thu Nov 26 21:34:36 2020 +0800
+
+    update
+
+[33mcommit ca923152c11a18c2465dbdfe988fe11b8f85cbee[m
+Author: 酵父 <fred26s@163.com>
+Date:   Thu Nov 26 19:12:40 2020 +0800
+
+    修复TRAVIS构建 yarn --frozen-lockfile问题
+
+[33mcommit 36d1469cd1327a0b93a64c2b1f091446c720bff0[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Thu Nov 26 15:04:16 2020 +0800
+
+    增加restful.md
+
+[33mcommit a015b66df219554fa70f8cf005d3e26ebe0073a5[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Nov 2 14:13:04 2020 +0800
+
+    update
+
+[33mcommit 68f223b9324356731540bcd044934bb26035a770[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Nov 2 13:51:11 2020 +0800
+
+    build init
+
+[33mcommit 0fb63dc30501c28c70d4b0a151f9647f77fe9f49[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Nov 2 13:45:25 2020 +0800
+
+    恢复yml
+
+[33mcommit 9630e7b23bbdc1704c9e1d81e375e0318e3b52a0[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Nov 2 13:21:52 2020 +0800
+
+    deploy
+
+[33mcommit c6f7815db6a5b6705675b6cbeb082fd68b893b72[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Nov 2 12:49:23 2020 +0800
+
+    找到travis不更新问题，yml中不可添加#注释
+
+[33mcommit 7edeeff5b61a41f172aab21187ca86a8f9fc6926[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Nov 2 12:43:28 2020 +0800
+
+    恢复yml
+
+[33mcommit 0ce777124b608eae55a04f7358ec06f9df778de9[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Nov 2 12:00:49 2020 +0800
+
+    修改配置
+
+[33mcommit 703fbe1beb438729a978e07c0710df8f64c8b73d[m
+Author: 酵父 <fred26s@163.com>
+Date:   Mon Nov 2 11:23:39 2020 +0800
+
+    尝试travis服务器自动构建
+
+[33mcommit 25ec743b7bb794fd09230dc0cd57ae24f80303a0[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sun Nov 1 23:52:16 2020 +0800
+
+    增加 自动部署.md
+
+[33mcommit 0ef876172a1f3de0441cc2c80fdb22dc56a80a7d[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sun Nov 1 23:06:25 2020 +0800
+
+    测试线上自动拉取部署
+
+[33mcommit 960e0442ae916e592adf3de83b5f8eadfce86be5[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sat Oct 31 12:28:34 2020 +0800
+
+    将本地服务器图片 迁移到 又拍云
+
+[33mcommit 5ecaffc2085d1c71aa5d053c1de649bc0a1eb82f[m
+Author: fred26s <48949801+fred26s@users.noreply.github.com>
+Date:   Tue Oct 27 17:23:25 2020 +0800
+
+    Update .travis.yml
+
+[33mcommit 5fb494b282db46e4b491c16414db1415beb72849[m
+Author: fred26s <48949801+fred26s@users.noreply.github.com>
+Date:   Tue Oct 27 16:16:06 2020 +0800
+
+    测试脚本执行
+
+[33mcommit c4070ae541ce41b762debfbde4d3058d2d08b8a0[m
+Author: fred26s <48949801+fred26s@users.noreply.github.com>
+Date:   Tue Oct 27 09:01:46 2020 +0800
+
+    修改yml shell
+
+[33mcommit 2db7ba3e906fa2fe18ce4c4f3181bbb8c4ed7fae[m
+Author: fred26s <48949801+fred26s@users.noreply.github.com>
+Date:   Mon Oct 26 22:20:49 2020 +0800
+
+    Update .travis.yml
+
+[33mcommit 5370656436d9b96912dd2c619f7764346cc5901e[m
+Author: fred26s <48949801+fred26s@users.noreply.github.com>
+Date:   Mon Oct 26 22:09:12 2020 +0800
+
+    测试SHELL文件
+
+[33mcommit 1f7d2643bb717a49dce5ab6aa2a22c425d4d326d[m
+Author: 酵父 <fred26s@163.com>
+Date:   Sat Oct 17 17:08:58 2020 +0800
+
+    测试origin build
+
+[33mcommit de9621524edfdcbf1876727091a7a30defe706fe[m
+Author: 酵父 <fred26s@163.com>
+Date:   Thu Oct 15 21:56:01 2020 +0800
+
+    最后尝试创建
+
+[33mcommit d67b7600c5e217b117838d5c95b7494c053e5527[m
+Author: 酵父 <fred26s@163.com>
+Date:   Thu Oct 15 21:52:23 2020 +0800
+
+    再再再次尝试构建
+
+[33mcommit bc9006e5635563ae1d30a9959a858739777d0f29[m
+Author: jfred <fred26s@163.com>
+Date:   Thu Oct 15 21:46:46 2020 +0800
+
+    centos update
+
+[33mcommit bdd61c64116aa3b7f0e939da1a26f4f790106ee7[m
+Author: jfred <fred26s@163.com>
+Date:   Thu Oct 15 21:32:10 2020 +0800
+
+    update yml
+
+[33mcommit 90266d8b4e960362f416ef7fc286abab3199cbac[m
+Author: 酵父 <fred26s@163.com>
+Date:   Thu Oct 15 21:08:27 2020 +0800
+
+    再次测试构建
+
+[33mcommit 0efb11570a3c0d9af0995ca957d10bd8b4729690[m
+Author: 酵父 <fred26s@163.com>
+Date:   Thu Oct 15 20:55:25 2020 +0800
+
+    尝试构建
+
+[33mcommit e61125a175c48db954443f6495dee48cce0ed2ea[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Thu Oct 15 14:31:20 2020 +0800
+
+    增加README
+
+[33mcommit 2e588d6005f811c93802cd9997c09a47cd97ffae[m
+Author: 石飞帆 <shifeifan@e6yun.com>
+Date:   Thu Oct 15 14:25:52 2020 +0800
+
+    修改travis.yml
+
+[33mcommit 978699f1d4c9dddbb40e162ff31a95ed7da88575[m
+Author: jfred <fred26s@163.com>
+Date:   Thu Oct 15 14:18:36 2020 +0800
+
+    添加ssh连接
+
+[33mcommit aa3759f05399b88516d81363bafcb01e24211ad9[m
+Author: fred26s <fred26s@163.com>
+Date:   Fri Oct 9 16:15:06 2020 +0800
+
+    清除npm test引起的error
+
+[33mcommit 39d6fdbc28ba97f0e2269f706a432f6b9b650ece[m
+Author: fred26s <fred26s@163.com>
+Date:   Fri Oct 9 15:39:54 2020 +0800
+
+    add .travis.yml
+
+[33mcommit 1e9e229459a4dc7e56acf02d74134ee4215f7b58[m
+Author: 酵父 <fred26s@163.com>
+Date:   Thu Oct 8 17:12:37 2020 +0800
+
+    init
