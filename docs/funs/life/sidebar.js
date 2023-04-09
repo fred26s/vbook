@@ -7,6 +7,7 @@ module.exports = [
       { title: "pregnant", path: "/funs/life/pregnant.md" },
       { title: "新生儿", path: "/funs/life/baby.md" },
       { title: "饮食", path: "/funs/life/food.md" },
+      { title: "房产", path: "/funs/life/house.md" },
     ],
   },
 ];
