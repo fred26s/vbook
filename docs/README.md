@@ -11,7 +11,7 @@ features:
     details: 推迟梦想就是否定梦想. 
 
   - title: 💎
-    details: Money Never Sleep.WSB
+    details: Money Never Sleep.WSB.
 
 footer: MIT Licensed | Copyright © 2020-present JFred
 ---
